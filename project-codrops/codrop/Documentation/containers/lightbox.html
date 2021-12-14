@@ -1,0 +1,508 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lightbox | Containers | Themekit</title>
+    <meta name="description" content="JQuery lightbox plugin based on Magnific Popup. Show images, video and more.">
+    <script src="../themekit/scripts/jquery.min.js"></script>
+    <script src="../themekit/scripts/main.js"></script>
+    <link rel="stylesheet" href="../themekit/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../themekit/css/style.css">
+    <link rel="stylesheet" href="../themekit/css/magnific-popup.css">
+    <link rel="stylesheet" href="../themekit/css/prettify.css">
+    <link rel="stylesheet" href="../skin.css">
+    <link rel="icon" href="../images/favicon.png">
+</head>
+<body class="menu-side-cnt">
+    <div id="preloader"></div>
+    <nav class="menu-classic menu-fixed menu-wide doc-main-menu scroll-change" data-menu-anima="fade-in">
+        <div class="container">
+            <div class="menu-brand">
+                <a href="https://themekit.dev/">
+                    <img class="logo-default" src="../images/logo.svg" alt="logo" />
+                    <img class="logo-retina" src="../images/logo.svg" alt="logo" />
+                </a>
+            </div>
+        </div>
+    </nav>
+    <nav class="menu-side menu-side-collapse doc-menu scroll-change">
+        <i class="menu-btn"></i>
+        <div class="menu-cnt">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Getting started</a>
+                    <ul>
+                        <li><a href="#">Start here</a></li>
+                        <li><a href="../css.html">Global CSS</a></li>
+                        <li><a href="../js.html">Global JS</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Components</a>
+                    <ul>
+                        <li><a href="../components/animations.html">Animations</a></li>
+                        <li><a href="../components/buttons.html">Buttons and inputs</a></li>
+                        <li><a href="../components/contact-form.html">Contact form</a></li>
+                        <li><a href="../components/content-box.html">Content box</a></li>
+                        <li><a href="../components/countdown.html">Countdown</a></li>
+                        <li><a href="../components/counter.html">Counter</a></li>
+                        <li><a href="../components/icons.html">Icons</a></li>
+                        <li><a href="../components/image-box.html">Image box</a></li>
+                        <li><a href="../components/inner-menu.html">Inner menu</a></li>
+                        <li><a href="../components/lists.html">Lists</a></li>
+                        <li><a href="../components/map.html">Map</a></li>
+                        <li><a href="../components/media-box.html">Media box</a></li>
+                        <li><a href="../components/progress-bar.html">Progress bar</a></li>
+                        <li><a href="../components/social.html">Social</a></li>
+                        <li><a href="../components/table.html">Table</a></li>
+                        <li><a href="../components/timeline.html">Timeline</a></li>
+                        <li><a href="../components/typography.html">Typography</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Containers</a>
+                    <ul>
+                        <li><a href="../containers/accordion.html">Accordion</a></li>
+                        <li><a href="../containers/album.html">Album</a></li>
+                        <li><a href="../containers/collapse.html">Collapse</a></li>
+                        <li><a href="../containers/fixed-area.html">Fixed area</a></li>
+                        <li><a href="../containers/grid.html">Grid</a></li>
+                        <li><a href="../containers/lightbox.html">Lightbox</a></li>
+                        <li><a href="../containers/masonry.html">Masonry</a></li>
+                        <li><a href="../containers/scroll-box.html">Scroll box</a></li>
+                        <li><a href="../containers/slider.html">Slider</a></li>
+                        <li><a href="../containers/steps.html">Steps</a></li>
+                        <li><a href="../containers/tab.html">Tab</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Sections</a>
+                    <ul>
+                        <li><a href="../sections/base.html">Base</a></li>
+                        <li><a href="../sections/image.html">Image</a></li>
+                        <li><a href="../sections/slider.html">Slider</a></li>
+                        <li><a href="../sections/video.html">Video</a></li>
+                        <li><a href="../sections/block.html">Block</a></li>
+                        <li><a href="../sections/map.html">Map</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Headers</a>
+                    <ul>
+                        <li><a href="../headers/image.html">Image</a></li>
+                        <li><a href="../headers/slider.html">Image slider</a></li>
+                        <li><a href="../headers/video.html">Video</a></li>
+                        <li><a href="../headers/base.html">Base</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../navs.html">Navigation</a>
+                </li>
+                <li>
+                    <a href="../footer.html">Footer</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header id="header" class="header-base doc-title scroll-hide">
+        <div class="container">
+            <h1>Lightbox</h1>
+            <div class="menu-inner">
+                <div><i class="menu-btn"></i><span>Menu</span></div>
+                <ul>
+                    <li class="active"><a href="#preview">Preview</a></li>
+                    <li><a href="#usage">Usage</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-base">
+            <div class="container">
+                <h4 id="preview" class="doc-subtitle">Preview</h4>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <a id="preview-1" href="../images/thumbs/wide.png" data-lightbox-anima="fade-in" class="btn btn-sm lightbox full-width" data-options="mainClass:inner" title="Lorem ipsum dolor sitamete">Image</a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a id="preview-2" href="https://www.youtube.com/watch?v=Lb4IcGF5iTQ" data-lightbox-anima="fade-in" class="btn btn-sm lightbox full-width">Youtube</a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="https://vimeo.com/162564288" data-lightbox-anima="fade-in" class="btn btn-sm lightbox full-width">Vimeo</a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="../images/video.mp4" data-lightbox-anima="fade-in" class="btn btn-sm lightbox full-width">MP4</a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&hl=en&t=v&hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom" data-lightbox-anima="fade-in" class="btn btn-sm lightbox full-width">Map</a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a id="scroll-box-trigger" href="#scroll-box" class="btn btn-sm lightbox full-width" data-lightbox-anima="fade-in">Custom</a>
+                        <div id="scroll-box" class="box-lightbox">
+                            <div class="scroll-box" data-height="400" data-rail-color="#c3dff7" data-bar-color="#379cf4">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea coSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                    beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                                    ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                                    dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                                    laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+                                    esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea coSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                    beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                                    ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                                    dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                                    laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+                                    esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea coSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                    beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                                    ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                                    dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                                    laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+                                    esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                </p>
+                            </div>
+                        </div>
+                        <a id="example-box-trigger" href="#example-box" class="hidden lightbox" data-lightbox-anima="fade-in"></a>
+                        <div id="example-box" class="box-lightbox">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea coSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
+                        </div>
+                    </div>
+                </div>
+                <hr class="space" />
+                <h4 id="usage" class="doc-subtitle">Usage</h4>
+                <div class="doc-tab tab-box tab-inverse" data-tab-anima="fade-in">
+                    <div class="panel active">
+<pre class="prettyprint doc-code">
+&lt;a href="image.jpg" data-lightbox-anima="fade-in" class="btn btn-sm lightbox" data-options="mainClass:inner" title="Lorem ipsum">Image&lt;/a>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;a href="https://www.youtube.com/watch?v=Lb4IcGF5iTQ" data-lightbox-anima="fade-in" class="btn btn-sm lightbox">Youtube&lt;/a>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;a href="https://vimeo.com/162564288" data-lightbox-anima="fade-in" class="btn btn-sm lightbox">Vimeo&lt;/a>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;a href="video.mp4" data-lightbox-anima="fade-in" class="btn btn-sm lightbox">MP4&lt;/a>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;a href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&hl=en&t=v&hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom" data-lightbox-anima="fade-in" class="btn btn-sm lightbox">Map&lt;/a>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;a href="#your-id" class="btn btn-sm lightbox" data-lightbox-anima="fade-in">Custom&lt;/a>
+&lt;div id="your-id" class="box-lightbox">
+    &lt;div class="scroll-box" data-height="400">
+        Lorem ipsum dolor sit amet, consectetur adipisicing.
+    &lt;/div>
+&lt;/div>
+</pre>
+                    </div>
+                    <ul class="nav tab-nav">
+                        <li class="active"><a href="#">Image</a></li>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">Vimeo</a></li>
+                        <li><a href="#">MP4</a></li>
+                        <li><a href="#">Map</a></li>
+                        <li><a href="#">Custom</a></li>
+                    </ul>
+                </div>
+                <hr class="space-sm" />
+                <h4 id="settings" class="doc-subtitle">Installation</h4>
+<pre class="prettyprint doc-code">
+&lt;script src="../themekit/scripts/magnific-popup.min.js">&lt;/script>
+&lt;link rel="stylesheet" href="../themekit/css/magnific-popup.css">
+</pre>
+                <hr class="space" />
+                <h4 id="settings" class="doc-subtitle">Settings</h4>
+                <table class="table table-full-border doc-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Initialization</td>
+                            <td>CSS</td>
+                            <td>
+                                Add the class <code>lightbox</code> to a link the enable the lightbox.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Javascript functions</td>
+                            <td>Javascript</td>
+                            <td>
+                                <table class="table doc-table-80">
+                                    <tbody>
+                                        <tr>
+                                            <td>Lightbox enabled</td>
+                                            <td>
+                                                Use the function <code>$('#target').magnificPopup({ type: 'content-type' });</code> to make a link lightbox.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Open a lightbox</td>
+                                            <td>
+                                                Use the function <code>$.magnificPopup.open({ items: { src: 'content-link' }, type: 'content-type' });</code> to open a lightbox directly from Javascript.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Animations</td>
+                            <td>Attribute</td>
+                            <td>
+                                Add the attribute <code>data-lightbox-anima="animation-name"</code> to the link show an animation when the user open the lightbox.
+                                For the animations list and for more details visit the <a href="../components/animations.html" class="btn-text">animations</a> page.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Show on load</td>
+                            <td>HTML</td>
+                            <td>
+                                To show a lightbox content on page load use the following code: <br />
+<pre class="prettyprint doc-code">
+&lt;div id="your-id" class="box-lightbox" data-lightbox-anima="show-scale" data-trigger="load">
+    Lorem ipsum dolor sit amet, consectetur adipisicing.
+&lt;/div>
+</pre>
+                                Below the available options:
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td><code>data-link="URL"</code></td>
+                                            <td>
+                                                Show a media content like a video. Insert e Youtube or Vimeo link.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>data-click="URL"</code></td>
+                                            <td>
+                                                Redirect to a new page when the user click the box.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>data-click-target="_blank"</code></td>
+                                            <td>
+                                                Open the link in a new window.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>data-expire="123"</code></td>
+                                            <td>
+                                                Show the lightbox only the first time and every 123 days. Set to 0 to reset.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Show on scroll</td>
+                            <td>HTML</td>
+                            <td>
+                                To show a lightbox content when the user scroll the page and reach the desidered area use the following code:
+<pre class="prettyprint doc-code">
+&lt;a href="your-id" class="lightbox-trigger" data-trigger="scroll">&lt;/a>
+&lt;div id="your-id" class="box-lightbox" data-lightbox-anima="show-scale" data-trigger="scroll">
+    Lorem ipsum dolor sit amet, consectetur adipisicing.
+&lt;/div>
+</pre>
+                                The link with the class <code>lightbox-trigger</code> must be placed at the position of the page that will activate the lightbox,
+                                it can be hidden but must not use CSS value <code>display:none</code>.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Youtube and video attributes</td>
+                            <td>String</td>
+                            <td>
+                                If you need to add some attribute to Youtube (or other) link. Use <code>?</code> instead of <code>&</code>.
+                                Example: <code>https://www.youtube.com/watch?v=HIfDatvJbLM?rel=0</code> rel=0 is the attribute.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Global lightbox</td>
+                            <td>CSS</td>
+                            <td>
+                                Add the class <code>lightbox-global</code> to any container to convert every image link inside it to lightbox.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Deep linking</td>
+                            <td>URL</td>
+                            <td>
+                                <table class="table doc-table-80">
+                                    <tbody>
+                                        <tr>
+                                            <td>Grid list</td>
+                                            <td>
+                                                For more details visit the <a href="grid.html#settings" class="btn-text">grid list</a> page.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Masonry list</td>
+                                            <td>
+                                                For more details visit the <a href="masonry.html#settings" class="btn-text">masonry list</a> page.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Single item</td>
+                                            <td>
+                                                Open a lightbox item with the URL <code>www.your-site.com?lightbox=YOUR-ID</code> where YOUR-ID is the ID of the lightbox item you want to open.
+                                                Supported components: image-box, buttons, custom lightbox with class <code>box-lightbox</code> and all the components with class <code>lightbox</code>.
+                                                <div class="doc-try">
+                                                    Try it
+                                                    <a href="?lightbox=preview-1" class="btn-text scroll-to">Open item 1</a>
+                                                    <a href="?lightbox=preview-2" class="btn-text scroll-to">Open item 2</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Options</td>
+                            <td>Attribute</td>
+                            <td>
+                                You can pass the plugin options directly from the component with the attribute <code>data-options="optione:value,optione:value, ..."</code>.
+                                To view the full options list visit the <a class="btn-text" href="http://dimsemenov.com/plugins/magnific-popup/documentation.html" target="_blank" rel="nofollow">plugin documentation</a> page.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lightbox types</td>
+                            <td>URL</td>
+                            <td>
+                                <table class="table doc-table-80">
+                                    <tbody>
+                                        <tr>
+                                            <td>Image</td>
+                                            <td>
+                                                URL of the image. To show a text caption add the attribute <code>title="Your text"</code> to the lightbox link.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Video MP4</td>
+                                            <td>
+                                                URL of the MP4 video. The video must be compatible with the HTML5 format.
+                                                You can use the free software <a class="btn-text" href="https://www.any-video-converter.com/products/for_video_free/" rel="nofollow" target="_blank">Any video converter</a>
+                                                to convert your videos.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Video Youtube</td>
+                                            <td>
+                                                URL of the URL of the Youtube video. Only the format <code>https://www.youtube.com/watch?v=VIDEO-ID</code> is supported.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Video Vimeo</td>
+                                            <td>
+                                                URL of the URL of the Vimeo video.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Google Maps</td>
+                                            <td>
+                                                URL of the Google Map with the following format: <code>https://maps.google.com/maps?q=YOUR-ADDRESS</code>. YOUR-ADDRESS must be replaced with an address, replace the spaces of the address with the <code>+</code> symbol.
+                                                You can copy the address from the URL of your browser.
+                                                Ex: the URL to use for the map of the following link is <code>https://maps.google.com/maps?q=New+York,+United+States</code>.
+                                                <a class="btn-text" target="_blank" rel="nofollow" href="https://www.google.it/maps/place/New+York,+United+States.html">Link</a>.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Custom HTML</td>
+                                            <td>
+                                                To show a custom HTML content set the <code>href</code> attribute of the lightbox link to the ID or class of custom HTML
+                                                item and add the class <code>box-lightbox</code>.
+                                                You can set different sizes for the box by add one of the following classes to the custom HTML item:
+                                                <code>box-lightbox-sm</code>,<code>box-lightbox-md</code>,<code>box-lightbox-lg</code>,<code>full-screen</code>.
+                                                <div class="doc-try">
+                                                    Try it
+                                                    <a href="#" onclick="$('#example-box').removeClass(['box-lightbox-md', 'box-lightbox-lg', 'full-screen']).addClass('box-lightbox-sm'); $('#example-box-trigger').click()" class="btn-text">Small</a>
+                                                    <a href="#" onclick="$('#example-box').removeClass(['box-lightbox-sm', 'box-lightbox-lg', 'full-screen']).addClass('box-lightbox-md'); $('#example-box-trigger').click()" class="btn-text">Medium</a>
+                                                    <a href="#" onclick="$('#example-box').removeClass(['box-lightbox-md', 'box-lightbox-sm', 'full-screen']).addClass('box-lightbox-lg'); $('#example-box-trigger').click()" class="btn-text">Large</a>
+                                                    <a href="#" onclick="$('#example-box').removeClass(['box-lightbox-md', 'box-lightbox-lg', 'box-lightbox-sm']).addClass('full-screen'); $('#example-box-trigger').click()" class="btn-text">Full screen</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Scroll box</td>
+                                            <td>
+                                                To show a scrollable box insert the content into the component <code>&lt;div class="scroll-box" data-height="123"> ... &lt;/div></code>.
+                                                The scroll box mode require the following script installation:
+<pre class="prettyprint doc-code">
+&lt;script src='themekit/scripts/slimscroll.min.js'>&lt;/script&gt; 
+</pre>
+                                                For more details visit the <a href="scroll-box.html" class="btn-text">scroll box</a> page.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lightbox gallery</td>
+                            <td>Information</td>
+                            <td>
+                               Visit the <a href="grid.html#settings" class="btn-text">grid list</a> or the <a href="masonry.html#settings" class="btn-text">masonry list</a> page for more informations.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container"></div>
+        <div class="footer-bar">
+            <div class="container">
+                &copy; 2019. All rights reserved.
+                Designed and built with passion and hard work by the <a href="https://schiocco.com" target="_blank">schiocco.com</a> team.
+            </div>
+        </div>
+        <link async rel="stylesheet" href="../themekit/media/icons/iconsmind/line-icons.min.css">
+        <script src="../themekit/scripts/magnific-popup.min.js"></script>
+        <script src="../themekit/scripts/imagesloaded.min.js"></script>
+        <script src="../themekit/scripts/slimscroll.min.js"></script>
+        <script src="../themekit/scripts/tab-accordion.js"></script>
+        <script src="../themekit/scripts/prettify.js"></script>
+        
+    </footer>
+</body>
+</html>

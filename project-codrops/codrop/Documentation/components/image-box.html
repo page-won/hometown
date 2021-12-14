@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image box | Components | Themekit</title>
+    <meta name="description" content="Image box for show images on you HTML website.">
+    <script src="../themekit/scripts/jquery.min.js"></script>
+    <script src="../themekit/scripts/main.js"></script>
+    <link rel="stylesheet" href="../themekit/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../themekit/css/style.css">
+    <link rel="stylesheet" href="../themekit/css/image-box.css">
+    <link rel="stylesheet" href="../themekit/css/components.css">
+    <link rel="stylesheet" href="../themekit/css/prettify.css">
+    <link rel="stylesheet" href="../skin.css">
+    <link rel="icon" href="../images/favicon.png">
+</head>
+<body class="menu-side-cnt">
+    <div id="preloader"></div>
+    <nav class="menu-classic menu-fixed menu-wide doc-main-menu scroll-change" data-menu-anima="fade-in">
+        <div class="container">
+            <div class="menu-brand">
+                <a href="https://themekit.dev/">
+                    <img class="logo-default" src="../images/logo.svg" alt="logo" />
+                    <img class="logo-retina" src="../images/logo.svg" alt="logo" />
+                </a>
+            </div>
+        </div>
+    </nav>
+    <nav class="menu-side menu-side-collapse doc-menu scroll-change">
+        <i class="menu-btn"></i>
+        <div class="menu-cnt">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Getting started</a>
+                    <ul>
+                        <li><a href="#">Start here</a></li>
+                        <li><a href="../css.html">Global CSS</a></li>
+                        <li><a href="../js.html">Global JS</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Components</a>
+                    <ul>
+                        <li><a href="../components/animations.html">Animations</a></li>
+                        <li><a href="../components/buttons.html">Buttons and inputs</a></li>
+                        <li><a href="../components/contact-form.html">Contact form</a></li>
+                        <li><a href="../components/content-box.html">Content box</a></li>
+                        <li><a href="../components/countdown.html">Countdown</a></li>
+                        <li><a href="../components/counter.html">Counter</a></li>
+                        <li><a href="../components/icons.html">Icons</a></li>
+                        <li><a href="../components/image-box.html">Image box</a></li>
+                        <li><a href="../components/inner-menu.html">Inner menu</a></li>
+                        <li><a href="../components/lists.html">Lists</a></li>
+                        <li><a href="../components/map.html">Map</a></li>
+                        <li><a href="../components/media-box.html">Media box</a></li>
+                        <li><a href="../components/progress-bar.html">Progress bar</a></li>
+                        <li><a href="../components/social.html">Social</a></li>
+                        <li><a href="../components/table.html">Table</a></li>
+                        <li><a href="../components/timeline.html">Timeline</a></li>
+                        <li><a href="../components/typography.html">Typography</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Containers</a>
+                    <ul>
+                        <li><a href="../containers/accordion.html">Accordion</a></li>
+                        <li><a href="../containers/album.html">Album</a></li>
+                        <li><a href="../containers/collapse.html">Collapse</a></li>
+                        <li><a href="../containers/fixed-area.html">Fixed area</a></li>
+                        <li><a href="../containers/grid.html">Grid</a></li>
+                        <li><a href="../containers/lightbox.html">Lightbox</a></li>
+                        <li><a href="../containers/masonry.html">Masonry</a></li>
+                        <li><a href="../containers/scroll-box.html">Scroll box</a></li>
+                        <li><a href="../containers/slider.html">Slider</a></li>
+                        <li><a href="../containers/steps.html">Steps</a></li>
+                        <li><a href="../containers/tab.html">Tab</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Sections</a>
+                    <ul>
+                        <li><a href="../sections/base.html">Base</a></li>
+                        <li><a href="../sections/image.html">Image</a></li>
+                        <li><a href="../sections/slider.html">Slider</a></li>
+                        <li><a href="../sections/video.html">Video</a></li>
+                        <li><a href="../sections/block.html">Block</a></li>
+                        <li><a href="../sections/map.html">Map</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Headers</a>
+                    <ul>
+                        <li><a href="../headers/image.html">Image</a></li>
+                        <li><a href="../headers/slider.html">Image slider</a></li>
+                        <li><a href="../headers/video.html">Video</a></li>
+                        <li><a href="../headers/base.html">Base</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../navs.html">Navigation</a>
+                </li>
+                <li>
+                    <a href="../footer.html">Footer</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header id="header" class="header-base doc-title scroll-hide">
+        <div class="container">
+            <h1>Image box</h1>
+            <div class="menu-inner">
+                <div><i class="menu-btn"></i><span>Menu</span></div>
+                <ul>
+                    <li class="active"><a href="#preview">Preview</a></li>
+                    <li><a href="#usage">Usage</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-base">
+            <div class="container">
+                <h4 id="preview" class="doc-subtitle">Preview</h4>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <p class="doc-subtitle">Base</p>
+                        <a class="img-box" href="#">
+                            <img src="../images/thumbs/wide.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p class="doc-subtitle">Caption</p>
+                        <a class="img-box img-box-caption" href="#">
+                            <img src="../images/thumbs/wide.png" alt="">
+                            <span>Caption text</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p class="doc-subtitle">Icon</p>
+                        <a class="img-box" href="#">
+                            <img src="../images/thumbs/wide-empty.png" alt="">
+                            <i class="im-paper-plane"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p class="doc-subtitle">Animation</p>
+                        <a class="img-box" href="#" data-anima="fade-left" data-trigger="hover" data-hidden="true">
+                            <img src="../images/thumbs/wide-empty.png" alt="">
+                            <i class="im-paper-plane anima"></i>
+                        </a>
+                    </div>
+                </div>
+                <hr class="space" />
+                <h4 id="usage" class="doc-subtitle">Usage</h4>
+                <div class="doc-tab tab-box tab-inverse" data-tab-anima="fade-in">
+                    <div class="panel active">
+<pre class="prettyprint doc-code">
+&lt;a class="img-box" href="#">
+    &lt;img src="image.jpg" alt="">
+&lt;/a>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;a class="img-box img-box-caption" href="#">
+    &lt;img src="image.jpg" alt="">
+    &lt;span>Caption text&lt;/span>
+&lt;/a>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;a class="img-box" href="#">
+    &lt;img src="image.jpg" alt="">
+    &lt;i class="im-paper-plane">&lt;/i>
+&lt;/a>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;a class="img-box img-scale" href="#" data-anima="fade-left" data-trigger="hover" data-hidden="true">
+    &lt;img src="image.jpg" alt="">
+    &lt;i class="im-paper-plane anima">&lt;/i>
+&lt;/a>
+</pre>
+                    </div>
+                    <ul class="tab-nav">
+                        <li class="active"><a href="#">Base</a></li>
+                        <li><a href="#">Caption</a></li>
+                        <li><a href="#">Icon</a></li>
+                        <li><a href="#">Animation</a></li>
+                    </ul>
+                </div>
+                <hr class="space-sm" />
+                <h4 id="usage" class="doc-subtitle">Installation</h4>
+<pre class="prettyprint doc-code">
+&lt;script src="../themekit/scripts/imagesloaded.min.js">&lt;/script>
+</pre>
+                <hr class="space" />
+                <h4 id="settings" class="doc-subtitle">Settings</h4>
+                <table class="table table-full-border doc-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lightbox</td>
+                            <td>CSS</td>
+                            <td>
+                                To show a large image on click add the class <code>lightbox</code> to the component.
+                                For more details visit the <a href="../containers/lightbox.html" class="btn-text">lightbox</a> page.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Icons lists</td>
+                            <td>CSS</td>
+                            <td>
+                                <a class="btn-text" href="http://fontawesome.io/icons/" target="_blank">Font Awesome</a><span class="space-xs"></span>
+                                <a class="btn-text" href="http://www.html.framework-y.com/themekit/scripts/iconsmind/docs/" target="_blank">Icons Mind</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Images adjustment</td>
+                            <td>--</td>
+                            <td>
+                                The framework resize and center the images automatically to fit the container.
+                                This feature is powered by the <a target="_blank" rel="nofollow" href="https://github.com/desandro/imagesloaded" class="btn-text">Images Loaded</a> plugin.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gray effect</td>
+                            <td>CSS</td>
+                            <td>
+                                To set a gray effect to ab image add the class <code>img-grayscale</code> to the component.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>PNG</td>
+                            <td>CSS</td>
+                            <td>
+                                If you're using a PNG image with transparent background Add the class <code>img-png</code> to the component to remove the dark overlay and maintain the original image sizes.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Image animation</td>
+                            <td>CSS</td>
+                            <td>
+                                Add one of the following classes to the component to apply an animation to the image on mouse hover:
+                                <code>img-scale</code>,<code>img-scale-rotate</code>,<code>img-pulse</code>,<code>img-pulse-horizontal</code>.
+                                For more details visit the <a href="animations.html" class="btn-text">animations</a> page.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Icon animation</td>
+                            <td>--</td>
+                            <td>
+                                Add the attributes <code>data-anima="animation-name" data-trigger="hover" data-hidden="true"</code> to
+                                the component and the class <code>anima</code> to the icon.
+                                For the animations list and for more details visit the <a href="animations.html" class="btn-text">animations</a> page.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container"></div>
+        <div class="footer-bar">
+            <div class="container">
+                &copy; 2019. All rights reserved.
+                Designed and built with passion and hard work by the <a href="https://schiocco.com" target="_blank">schiocco.com</a> team.
+            </div>
+        </div>
+        <link async rel="stylesheet" href="../themekit/media/icons/iconsmind/line-icons.min.css">
+        <script src="../themekit/scripts/imagesloaded.min.js"></script>
+        <script src="../themekit/scripts/slimscroll.min.js"></script>
+        <script src="../themekit/scripts/prettify.js"></script>
+        <script src="../themekit/scripts/tab-accordion.js"></script>
+        
+    </footer>
+</body>
+</html>

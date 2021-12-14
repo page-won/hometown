@@ -1,0 +1,1091 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Content box | Components | Themekit</title>
+    <meta name="description" content="Content boxes for show differents websites component into your theme.">
+    <script src="../themekit/scripts/jquery.min.js"></script>
+    <script src="../themekit/scripts/main.js"></script>
+    <link rel="stylesheet" href="../themekit/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../themekit/css/style.css">
+    <link rel="stylesheet" href="../themekit/css/content-box.css">
+    <link rel="stylesheet" href="../themekit/css/prettify.css">
+    <link rel="stylesheet" href="../skin.css">
+    <link rel="icon" href="../images/favicon.png">
+</head>
+<body class="menu-side-cnt">
+    <div id="preloader"></div>
+    <nav class="menu-classic menu-fixed menu-wide doc-main-menu scroll-change" data-menu-anima="fade-in">
+        <div class="container">
+            <div class="menu-brand">
+                <a href="https://themekit.dev/">
+                    <img class="logo-default" src="../images/logo.svg" alt="logo" />
+                    <img class="logo-retina" src="../images/logo.svg" alt="logo" />
+                </a>
+            </div>
+        </div>
+    </nav>
+    <nav class="menu-side menu-side-collapse doc-menu scroll-change">
+        <i class="menu-btn"></i>
+        <div class="menu-cnt">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Getting started</a>
+                    <ul>
+                        <li><a href="#">Start here</a></li>
+                        <li><a href="../css.html">Global CSS</a></li>
+                        <li><a href="../js.html">Global JS</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Components</a>
+                    <ul>
+                        <li><a href="../components/animations.html">Animations</a></li>
+                        <li><a href="../components/buttons.html">Buttons and inputs</a></li>
+                        <li><a href="../components/contact-form.html">Contact form</a></li>
+                        <li><a href="../components/content-box.html">Content box</a></li>
+                        <li><a href="../components/countdown.html">Countdown</a></li>
+                        <li><a href="../components/counter.html">Counter</a></li>
+                        <li><a href="../components/icons.html">Icons</a></li>
+                        <li><a href="../components/image-box.html">Image box</a></li>
+                        <li><a href="../components/inner-menu.html">Inner menu</a></li>
+                        <li><a href="../components/lists.html">Lists</a></li>
+                        <li><a href="../components/map.html">Map</a></li>
+                        <li><a href="../components/media-box.html">Media box</a></li>
+                        <li><a href="../components/progress-bar.html">Progress bar</a></li>
+                        <li><a href="../components/social.html">Social</a></li>
+                        <li><a href="../components/table.html">Table</a></li>
+                        <li><a href="../components/timeline.html">Timeline</a></li>
+                        <li><a href="../components/typography.html">Typography</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Containers</a>
+                    <ul>
+                        <li><a href="../containers/accordion.html">Accordion</a></li>
+                        <li><a href="../containers/album.html">Album</a></li>
+                        <li><a href="../containers/collapse.html">Collapse</a></li>
+                        <li><a href="../containers/fixed-area.html">Fixed area</a></li>
+                        <li><a href="../containers/grid.html">Grid</a></li>
+                        <li><a href="../containers/lightbox.html">Lightbox</a></li>
+                        <li><a href="../containers/masonry.html">Masonry</a></li>
+                        <li><a href="../containers/scroll-box.html">Scroll box</a></li>
+                        <li><a href="../containers/slider.html">Slider</a></li>
+                        <li><a href="../containers/steps.html">Steps</a></li>
+                        <li><a href="../containers/tab.html">Tab</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Sections</a>
+                    <ul>
+                        <li><a href="../sections/base.html">Base</a></li>
+                        <li><a href="../sections/image.html">Image</a></li>
+                        <li><a href="../sections/slider.html">Slider</a></li>
+                        <li><a href="../sections/video.html">Video</a></li>
+                        <li><a href="../sections/block.html">Block</a></li>
+                        <li><a href="../sections/map.html">Map</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Headers</a>
+                    <ul>
+                        <li><a href="../headers/image.html">Image</a></li>
+                        <li><a href="../headers/slider.html">Image slider</a></li>
+                        <li><a href="../headers/video.html">Video</a></li>
+                        <li><a href="../headers/base.html">Base</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../navs.html">Navigation</a>
+                </li>
+                <li>
+                    <a href="../footer.html">Footer</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header id="header" class="header-base doc-title scroll-hide">
+        <div class="container">
+            <h1>Content box</h1>
+            <div class="menu-inner">
+                <div><i class="menu-btn"></i><span>Menu</span></div>
+                <ul>
+                    <li class="active"><a href="#preview">Preview</a></li>
+                    <li><a href="#usage">Usage</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                    <li><a href="#related">Related</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-base">
+            <div class="container">
+                <div id="preview" class="tab-box tab-vertical tab-inverse" data-tab-anima="fade-in">
+                    <div class="panel active">
+                        <div class="cnt-box cnt-box-side">
+                            <a href="#" class="img-box"><img src="../images/thumbs/wide.png" alt="" /></a>
+                            <div class="caption">
+                                <h2>Content box</h2>
+                                <p>
+                                    Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna.Lorem ipsum dolor sit amet.  no sea takimata sanctus est Lorem ipsum dolor sit amet.  sed diam voluptua.
+                                    Lorem ipsum dolor sit amet consectetur adipiscing elitsed do.
+                                </p>
+                                <a class="btn-text" href="#">Button</a>
+                            </div>
+                        </div>
+                        <hr class="space-sm" />
+                        <div class="cnt-box cnt-box-side">
+                            <a href="#" class="img-box"><img src="../images/thumbs/wide.png" alt="" /></a>
+                            <div class="caption">
+                                <h2>Content box</h2>
+                                <p>
+                                    Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna.Lorem ipsum dolor sit amet.  no sea takimata sanctus est Lorem ipsum dolor sit amet.  sed diam voluptua.
+                                    Lorem ipsum dolor sit amet consectetur adipiscing elitsed do.
+                                </p>
+                                <a class="btn-text" href="#">Button</a>
+                            </div>
+                        </div>
+                        <hr class="space-sm" />
+                        <div class="cnt-box cnt-box-side">
+                            <a href="#" class="img-box"><img src="../images/thumbs/wide.png" alt="" /></a>
+                            <div class="caption">
+                                <h2>Content box</h2>
+                                <p>
+                                    Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna.Lorem ipsum dolor sit amet.  no sea takimata sanctus est Lorem ipsum dolor sit amet.  sed diam voluptua.
+                                    Lorem ipsum dolor sit amet consectetur adipiscing elitsed do.
+                                </p>
+                                <a class="btn-text" href="#">Button</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="cnt-box cnt-box-top">
+                                    <a href="#" class="img-box"><img src="../images/thumbs/wide.png" alt="" /></a>
+                                    <div class="caption">
+                                        <h2>Content box</h2>
+                                        <p>
+                                            Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempor incididunt
+                                            ut labore et dolore magna. Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua.
+                                            Utenim ad minim veniam.
+                                        </p>
+                                        <a class="btn-text" href="#">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="cnt-box cnt-box-top">
+                                    <a href="#" class="img-box"><img src="../images/thumbs/wide.png" alt="" /></a>
+                                    <div class="caption">
+                                        <h2>Content box</h2>
+                                        <p>
+                                            Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempor incididunt
+                                            ut labore et dolore magna. Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua.
+                                            Utenim ad minim veniam.
+                                        </p>
+                                        <a class="btn-text" href="#">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="cnt-box cnt-box-side-icon">
+                            <i class="im-paper-plane"></i>
+                            <div class="caption">
+                                <h2>Content box</h2>
+                                <p>
+                                    Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna.Lorem ipsum dolor sit amet.  no sea takimata sanctus est Lorem ipsum dolor sit amet.  sed diam voluptua.
+                                    Lorem ipsum dolor sit amet consectetur adipiscing elitsed do.
+                                </p>
+                                <a class="btn-text" href="#">Button</a>
+                            </div>
+                        </div>
+                        <hr class="space-sm" />
+                        <div class="cnt-box cnt-box-side-icon">
+                            <i class="im-paper-plane"></i>
+                            <div class="caption">
+                                <h2>Content box</h2>
+                                <p>
+                                    Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna.Lorem ipsum dolor sit amet.  no sea takimata sanctus est Lorem ipsum dolor sit amet.  sed diam voluptua.
+                                    Lorem ipsum dolor sit amet consectetur adipiscing elitsed do.
+                                </p>
+                                <a class="btn-text" href="#">Button</a>
+                            </div>
+                        </div>
+                        <hr class="space-sm" />
+                        <div class="cnt-box cnt-box-side-icon">
+                            <i class="im-paper-plane"></i>
+                            <div class="caption">
+                                <h2>Content box</h2>
+                                <p>
+                                    Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna.Lorem ipsum dolor sit amet.  no sea takimata sanctus est Lorem ipsum dolor sit amet.  sed diam voluptua.
+                                    Lorem ipsum dolor sit amet consectetur adipiscing elitsed do.
+                                </p>
+                                <a class="btn-text" href="#">Button</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="cnt-box cnt-box-top-icon">
+                                    <i class="im-paper-plane"></i>
+                                    <div class="caption">
+                                        <h2>Content box</h2>
+                                        <p>
+                                            Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempor incididunt
+                                            ut labore et dolore magna. Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua.
+                                            Utenim ad minim veniam.
+                                        </p>
+                                        <a class="btn-text" href="#">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="cnt-box cnt-box-top-icon">
+                                    <i class="im-paper-plane"></i>
+                                    <div class="caption">
+                                        <h2>Content box</h2>
+                                        <p>
+                                            Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempor incididunt
+                                            ut labore et dolore magna. Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua.
+                                            Utenim ad minim veniam.
+                                        </p>
+                                        <a class="btn-text" href="#">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="cnt-box cnt-box-badge">
+                                    <a href="#" class="img-box"><img src="../images/thumbs/wide.png" alt="" /></a>
+                                    <div class="caption">
+                                        <div class="badge">1</div>
+                                        <h2>Content box</h2>
+                                        <p>
+                                            Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempor incididunt
+                                            ut labore et dolore magna. Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua.
+                                            Utenim ad minim veniam.
+                                        </p>
+                                        <a class="btn-text" href="#">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="cnt-box cnt-box-badge">
+                                    <a href="#" class="img-box"><img src="../images/thumbs/wide.png" alt="" /></a>
+                                    <div class="caption">
+                                        <div class="badge">2</div>
+                                        <h2>Content box</h2>
+                                        <p>
+                                            Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempor incididunt
+                                            ut labore et dolore magna. Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua.
+                                            Utenim ad minim veniam.
+                                        </p>
+                                        <a class="btn-text" href="#">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="cnt-box cnt-box-info" data-href="#">
+                                    <div class="extra-field">Extra</div>
+                                    <a href="#" class="img-box"><img src="../images/thumbs/wide.png" alt="" /></a>
+                                    <div class="caption">
+                                        <h2>Content box</h2>
+                                        <div class="cnt-info">
+                                            <div><span>Information</span><span>value</span></div>
+                                            <div><span>Information</span><span>value</span></div>
+                                            <div><span>Information</span><span>value</span></div>
+                                        </div>
+                                        <p>
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
+                                        </p>
+                                        <div class="bottom-info">
+                                            Excepteur sint occaecat cupidata.
+                                        </div>
+                                        <a class="btn-text" href="#">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="cnt-box cnt-box-info" data-href="#">
+                                    <div class="extra-field">Extra</div>
+                                    <a href="#" class="img-box"><img src="../images/thumbs/wide.png" alt="" /></a>
+                                    <div class="caption">
+                                        <h2>Content box</h2>
+                                        <div class="cnt-info">
+                                            <div><span>Information</span><span>value</span></div>
+                                            <div><span>Information</span><span>value</span></div>
+                                            <div><span>Information</span><span>value</span></div>
+                                        </div>
+                                        <p>
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                        <div class="bottom-info">
+                                            Excepteur sint occaecat cupidata.
+                                        </div>
+                                        <a class="btn-text" href="#">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="cnt-box cnt-box-blog-side">
+                            <a href="#" class="img-box">
+                                <div class="blog-date">
+                                    <span>01</span>
+                                    <span>JAN 2018</span>
+                                </div>
+                                <img src="../images/thumbs/wide.png" alt="" />
+                            </a>
+                            <div class="caption">
+                                <h2>Content box</h2>
+                                <ul class="icon-list icon-list-horizontal">
+                                    <li><i class="icon-calendar"></i><a href="#">01.01.1111</a></li>
+                                    <li><i class="icon-bookmark"></i><a href="#">Category</a></li>
+                                    <li><i class="icon-user"></i><a href="#">Admin</a></li>
+                                    <li class="icon-links">
+                                        <a href="#" data-social="share-fadebook" data-social-url=""><i class="icon-facebook"></i></a>
+                                        <a href="#" data-social="share-twitter" data-social-url=""><i class="icon-twitter"></i></a>
+                                        <a href="#" data-social="share-linkedin" data-social-url=""><i class="icon-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                                <p>
+                                    Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna.Lorem ipsum dolor sit amet.  no sea takimata sanctus est Lorem ipsum dolor sit amet.  sed diam voluptua.
+                                </p>
+                                <a class="btn-text" href="#">Button</a>
+                            </div>
+                        </div>
+                        <hr class="space-sm" />
+                        <div class="cnt-box cnt-box-blog-side">
+                            <a href="#" class="img-box">
+                                <div class="blog-date">
+                                    <span>01</span>
+                                    <span>JAN 2018</span>
+                                </div>
+                                <img src="../images/thumbs/wide.png" alt="" />
+                            </a>
+                            <div class="caption">
+                                <h2>Content box</h2>
+                                <ul class="icon-list icon-list-horizontal">
+                                    <li><i class="icon-calendar"></i><a href="#">01.01.1111</a></li>
+                                    <li><i class="icon-bookmark"></i><a href="#">Category</a></li>
+                                    <li><i class="icon-user"></i><a href="#">Admin</a></li>
+                                    <li class="icon-links">
+                                        <a href="#" data-social="share-fadebook" data-social-url=""><i class="icon-facebook"></i></a>
+                                        <a href="#" data-social="share-twitter" data-social-url=""><i class="icon-twitter"></i></a>
+                                        <a href="#" data-social="share-linkedin" data-social-url=""><i class="icon-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                                <p>
+                                    Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna.Lorem ipsum dolor sit amet.  no sea takimata sanctus est Lorem ipsum dolor sit amet.  sed diam voluptua.
+                                </p>
+                                <a class="btn-text" href="#">Button</a>
+                            </div>
+                        </div>
+                        <hr class="space-sm" />
+                        <div class="cnt-box cnt-box-blog-side">
+                            <a href="#" class="img-box">
+                                <div class="blog-date">
+                                    <span>01</span>
+                                    <span>JAN 2018</span>
+                                </div>
+                                <img src="../images/thumbs/wide.png" alt="" />
+                            </a>
+                            <div class="caption">
+                                <h2>Content box</h2>
+                                <ul class="icon-list icon-list-horizontal">
+                                    <li><i class="icon-calendar"></i><a href="#">01.01.1111</a></li>
+                                    <li><i class="icon-bookmark"></i><a href="#">Category</a></li>
+                                    <li><i class="icon-user"></i><a href="#">Admin</a></li>
+                                    <li class="icon-links">
+                                        <a href="#" data-social="share-fadebook" data-social-url=""><i class="icon-facebook"></i></a>
+                                        <a href="#" data-social="share-twitter" data-social-url=""><i class="icon-twitter"></i></a>
+                                        <a href="#" data-social="share-linkedin" data-social-url=""><i class="icon-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                                <p>
+                                    Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna.Lorem ipsum dolor sit amet.  no sea takimata sanctus est Lorem ipsum dolor sit amet.  sed diam voluptua.
+                                </p>
+                                <a class="btn-text" href="#">Button</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="cnt-box cnt-box-blog-top">
+                                    <a href="#" class="img-box">
+                                        <div class="blog-date">
+                                            <span>01</span>
+                                            <span>JAN 2018</span>
+                                        </div>
+                                        <img src="../images/thumbs/wide.png" alt="" />
+                                    </a>
+                                    <div class="caption">
+                                        <h2>Content box</h2>
+                                        <ul class="icon-list icon-list-horizontal">
+                                            <li><i class="icon-calendar"></i><a href="#">01.01.1111</a></li>
+                                            <li><i class="icon-bookmark"></i><a href="#">Category</a></li>
+                                            <li><i class="icon-user"></i><a href="#">Admin</a></li>
+                                            <li class="icon-links">
+                                                <a href="#" data-social="share-fadebook" data-social-url=""><i class="icon-facebook"></i></a>
+                                                <a href="#" data-social="share-twitter" data-social-url=""><i class="icon-twitter"></i></a>
+                                                <a href="#" data-social="share-linkedin" data-social-url=""><i class="icon-linkedin"></i></a>
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempor incididunt
+                                            ut labore et dolore magna. Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua.
+                                            Utenim ad minim veniam.
+                                        </p>
+                                        <a class="btn-text" href="#">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="cnt-box cnt-box-blog-top">
+                                    <a href="#" class="img-box">
+                                        <div class="blog-date">
+                                            <span>01</span>
+                                            <span>JAN 2018</span>
+                                        </div>
+                                        <img src="../images/thumbs/wide.png" alt="" />
+                                    </a>
+                                    <div class="caption">
+                                        <h2>Content box</h2>
+                                        <ul class="icon-list icon-list-horizontal">
+                                            <li><i class="icon-calendar"></i><a href="#">01.01.1111</a></li>
+                                            <li><i class="icon-bookmark"></i><a href="#">Category</a></li>
+                                            <li><i class="icon-user"></i><a href="#">Admin</a></li>
+                                            <li class="icon-links">
+                                                <a href="#" data-social="share-fadebook" data-social-url=""><i class="icon-facebook"></i></a>
+                                                <a href="#" data-social="share-twitter" data-social-url=""><i class="icon-twitter"></i></a>
+                                                <a href="#" data-social="share-linkedin" data-social-url=""><i class="icon-linkedin"></i></a>
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempor incididunt
+                                            ut labore et dolore magna. Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua.
+                                            Utenim ad minim veniam.
+                                        </p>
+                                        <a class="btn-text" href="#">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="cnt-box cnt-box-testimonials">
+                                    <img src="../images/thumbs/user.png" alt="" />
+                                    <p>
+                                        Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmo ut labore et dolore magna. 
+                                        Lorem ipsum dolor sit amet consectetur adipiscing.
+                                    </p>
+                                    <p class="testimonial-info">
+                                        <span>Full name</span>
+                                        <span>Company</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="cnt-box cnt-box-testimonials">
+                                    <img src="../images/thumbs/user.png" alt="" />
+                                    <p>
+                                        Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmo ut labore et dolore magna.
+                                        Lorem ipsum dolor sit amet consectetur adipiscing.
+                                    </p>
+                                    <p class="testimonial-info">
+                                        <span>Full name</span>
+                                        <span>Company</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="cnt-box cnt-box-testimonials-bubble">
+                                    <p>
+                                        Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmo ut labore et dolore magna.
+                                        Lorem ipsum dolor sit amet consectetur adipiscing.
+                                    </p>
+                                    <div class="thumb-bar">
+                                        <img src="../images/thumbs/user.png" alt="" />
+                                        <p>
+                                            <span>Full name</span>
+                                            <span>Company</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="cnt-box cnt-box-testimonials-bubble">
+                                    <p>
+                                        Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmo ut labore et dolore magna.
+                                        Lorem ipsum dolor sit amet consectetur adipiscing.
+                                    </p>
+                                    <div class="thumb-bar">
+                                        <img src="../images/thumbs/user.png" alt="" />
+                                        <p>
+                                            <span>Full name</span>
+                                            <span>Company</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="cnt-box cnt-box-team">
+                                    <img src="../images/thumbs/user.png" alt="" />
+                                    <div class="caption">
+                                        <h2>Full name</h2>
+                                        <span>Role</span>
+                                        <span class="icon-links">
+                                            <a href="#" target="_blank"><i class="icon-facebook"></i></a>
+                                            <a href="#" target="_blank"><i class="icon-twitter"></i></a>
+                                            <a href="#" target="_blank"><i class="icon-instagram"></i></a>
+                                        </span>
+                                        <p>
+                                            Lorem ipsum dolor sitamet consectetur eiusmo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="cnt-box cnt-box-team">
+                                    <img src="../images/thumbs/user.png" alt="" />
+                                    <div class="caption">
+                                        <h2>Full name</h2>
+                                        <span>Role</span>
+                                        <span class="icon-links">
+                                            <a href="#" target="_blank"><i class="icon-facebook"></i></a>
+                                            <a href="#" target="_blank"><i class="icon-twitter"></i></a>
+                                            <a href="#" target="_blank"><i class="icon-instagram"></i></a>
+                                        </span>
+                                        <p>
+                                            Lorem ipsum dolor sitamet consectetur eiusmo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="cnt-box cnt-box-team">
+                                    <img src="../images/thumbs/user.png" alt="" />
+                                    <div class="caption">
+                                        <h2>Full name</h2>
+                                        <span>Role</span>
+                                        <span class="icon-links">
+                                            <a href="#" target="_blank"><i class="icon-facebook"></i></a>
+                                            <a href="#" target="_blank"><i class="icon-twitter"></i></a>
+                                            <a href="#" target="_blank"><i class="icon-instagram"></i></a>
+                                        </span>
+                                        <p>
+                                            Lorem ipsum dolor sitamet consectetur eiusmo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="cnt-box cnt-pricing-table">
+                                    <div class="top-area">
+                                        <h2>Plan name</h2>
+                                        <div class="price">$<span>19</span></div>
+                                        <p>Per month</p>
+                                    </div>
+                                    <ul>
+                                        <li>Feature description</li>
+                                        <li>Feature description</li>
+                                        <li>Feature description</li>
+                                        <li>Feature description</li>
+                                        <li>Feature description</li>
+                                        <li>Feature description</li>
+                                        <li>Feature description</li>
+                                    </ul>
+                                    <div class="bottom-area">
+                                        <a class="btn btn-sm" href="#">Order now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="cnt-box cnt-pricing-table pricing-table-big">
+                                    <div class="top-area">
+                                        <h2>Plan name</h2>
+                                        <div class="price">$<span>19</span></div>
+                                        <p>Per month</p>
+                                    </div>
+                                    <ul>
+                                        <li>Feature description</li>
+                                        <li>Feature description</li>
+                                        <li>Feature description</li>
+                                        <li>Feature description</li>
+                                        <li>Feature description</li>
+                                        <li>Feature description</li>
+                                        <li>Feature description</li>
+                                    </ul>
+                                    <div class="bottom-area">
+                                        <a class="btn btn-sm" href="#">Order now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="cnt-box cnt-pricing-table">
+                                    <div class="top-area">
+                                        <h2>Plan name</h2>
+                                        <div class="price">$<span>19</span></div>
+                                        <p>Per month</p>
+                                    </div>
+                                    <ul>
+                                        <li>Feature description</li>
+                                        <li>Feature description</li>
+                                        <li>Feature description</li>
+                                        <li>Feature description</li>
+                                        <li>Feature description</li>
+                                        <li>Feature description</li>
+                                        <li>Feature description</li>
+                                    </ul>
+                                    <div class="bottom-area">
+                                        <a class="btn btn-sm" href="#">Order now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="cnt-box cnt-call">
+                            <i class="im-paper-plane"></i>
+                            <div class="caption">
+                                <h2>Call to action</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua.
+                                    Utenim ad minim veniam quis nostrud exercitation ullamco laboriso.
+                                </p>
+                                <a href="#" class="btn btn-xs">Button</a>
+                            </div>
+                        </div>
+                        <hr class="space-sm" />
+                        <div class="cnt-box cnt-call">
+                            <i class="im-paper-plane"></i>
+                            <div class="caption">
+                                <h2>Call to action</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua.
+                                    Utenim ad minim veniam quis nostrud exercitation ullamco laboriso.
+                                </p>
+                                <a href="#" class="btn btn-xs">Button</a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="tab-nav">
+                        <li class="active"><a href="#">Side image</a></li>
+                        <li><a href="#">Top image</a></li>
+                        <li><a href="#">Side icon</a></li>
+                        <li><a href="#">Top icon</a></li>
+                        <li><a href="#">Badge</a></li>
+                        <li><a href="#">Info</a></li>
+                        <li><a href="#">Blog side</a></li>
+                        <li><a href="#">Blog top</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Testimonials bubble</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Pricing table</a></li>
+                        <li><a href="#">Call to action</a></li>
+                    </ul>
+                </div>
+                <hr class="space" />
+                <h4 id="usage" class="doc-subtitle">Usage</h4>
+                <div class="tab-box tab-vertical tab-inverse" data-tab-anima="fade-in">
+                    <div class="panel active">
+<pre class="prettyprint doc-code">
+&lt;div class="cnt-box cnt-box-side">
+    &lt;a href="#" class="img-box">&lt;img src="image.jpg" alt="" />&lt;/a>
+    &lt;div class="caption">
+        &lt;h2>Content box&lt;/h2>
+        &lt;p>
+            Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempore.
+        &lt;/p>
+        &lt;a class="btn-text" href="#">Button&lt;/a>
+    &lt;/div>
+&lt;/div>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="cnt-box cnt-box-top">
+    &lt;a href="#" class="img-box">&lt;img src="image.jpg" alt="" />&lt;/a>
+    &lt;div class="caption">
+        &lt;h2>Content box&lt;/h2>
+        &lt;p>
+            Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempore.
+        &lt;/p>
+        &lt;a class="btn-text" href="#">Button&lt;/a>
+    &lt;/div>
+&lt;/div>
+</pre>                         
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="cnt-box cnt-box-side-icon">
+    &lt;i class="im-paper-plane">&lt;/i>
+    &lt;div class="caption">
+        &lt;h2>Content box&lt;/h2>
+        &lt;p>
+            Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempore.
+        &lt;/p>
+        &lt;a class="btn-text" href="#">Button&lt;/a>
+    &lt;/div>
+&lt;/div>
+</pre>      
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="cnt-box cnt-box-top-icon">
+    &lt;i class="im-paper-plane">&lt;/i>
+    &lt;div class="caption">
+        &lt;h2>Content box&lt;/h2>
+        &lt;p>
+            Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempore.
+        &lt;/p>
+        &lt;a class="btn-text" href="#">Button&lt;/a>
+    &lt;/div>
+&lt;/div>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="cnt-box cnt-box-badge">
+    &lt;a href="#" class="img-box">&lt;img src="image.jpg" alt="" />&lt;/a>
+    &lt;div class="caption">
+        &lt;div class="badge">1&lt;/div>
+        &lt;h2>Content box&lt;/h2>
+        &lt;p>
+            Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempore.
+        &lt;/p>
+        &lt;a class="btn-text" href="#">Button&lt;/a>
+    &lt;/div>
+&lt;/div>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="cnt-box cnt-box-info" data-href="#">
+    &lt;div class="extra-field">Extra&lt;/div>
+    &lt;a href="#" class="img-box">&lt;img src="image.jpg" alt="" />&lt;/a>
+    &lt;div class="caption">
+        &lt;h2>Content box&lt;/h2>
+        &lt;div class="cnt-info">
+            &lt;div>&lt;span>Information&lt;/span>&lt;span>value&lt;/span>&lt;/div>
+            &lt;div>&lt;span>Information&lt;/span>&lt;span>value&lt;/span>&lt;/div>
+            &lt;div>&lt;span>Information&lt;/span>&lt;span>value&lt;/span>&lt;/div>
+        &lt;/div>
+        &lt;p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        &lt;/p>
+        &lt;div class="bottom-info">
+            Excepteur sint occaecat cupidata.
+        &lt;/div>
+        &lt;a class="btn-text" href="#">Button&lt;/a>
+    &lt;/div>
+&lt;/div>
+</pre>
+                    </div>
+                    <div class="panel">
+                        <pre class="prettyprint doc-code">
+&lt;div class="cnt-box cnt-box-blog-side">
+    &lt;a href="#" class="img-box">
+        &lt;div class="blog-date">
+            &lt;span>01&lt;/span>
+            &lt;span>JAN 2018&lt;/span>
+        &lt;/div>
+        &lt;img src="image.jpg" alt="" />
+    &lt;/a>
+    &lt;div class="caption">
+        &lt;h2>Content box&lt;/h2>
+        &lt;ul class="icon-list icon-list-horizontal">
+            &lt;li>&lt;i class="icon-calendar">&lt;/i>&lt;a href="#">01.01.1111&lt;/a>&lt;/li>
+            &lt;li>&lt;i class="icon-bookmark">&lt;/i>&lt;a href="#">Category&lt;/a>&lt;/li>
+            &lt;li>&lt;i class="icon-user">&lt;/i>&lt;a href="#">Admin&lt;/a>&lt;/li>
+            &lt;li class="icon-links">
+                &lt;a href="#" data-social="share-fadebook" data-social-url="">&lt;i class="icon-facebook">&lt;/i>&lt;/a>
+                &lt;a href="#" data-social="share-twitter" data-social-url="">&lt;i class="icon-twitter">&lt;/i>&lt;/a>
+                &lt;a href="#" data-social="share-linkedin" data-social-url="">&lt;i class="icon-linkedin">&lt;/i>&lt;/a>
+            &lt;/li>
+        &lt;/ul>
+        &lt;p>
+            Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempore.
+        &lt;/p>
+        &lt;a class="btn-text" href="#">Button&lt;/a>
+    &lt;/div>
+&lt;/div>
+</pre>
+                    </div>
+                    <div class="panel">
+                        <pre class="prettyprint doc-code">
+&lt;div class="cnt-box cnt-box-blog-top">
+    &lt;a href="#" class="img-box">
+        &lt;div class="blog-date">
+            &lt;span>01&lt;/span>
+            &lt;span>JAN 2018&lt;/span>
+        &lt;/div>
+        &lt;img src="image.jpg" alt="" />
+    &lt;/a>
+    &lt;div class="caption">
+        &lt;h2>Content box&lt;/h2>
+        &lt;ul class="icon-list icon-list-horizontal">
+            &lt;li>&lt;i class="icon-calendar">&lt;/i>&lt;a href="#">01.01.1111&lt;/a>&lt;/li>
+            &lt;li>&lt;i class="icon-bookmark">&lt;/i>&lt;a href="#">Category&lt;/a>&lt;/li>
+            &lt;li class="icon-links">
+                &lt;a href="#" data-social="share-fadebook" data-social-url="">&lt;i class="icon-facebook">&lt;/i>&lt;/a>
+                &lt;a href="#" data-social="share-twitter" data-social-url="">&lt;i class="icon-twitter">&lt;/i>&lt;/a>
+                &lt;a href="#" data-social="share-linkedin" data-social-url="">&lt;i class="icon-linkedin">&lt;/i>&lt;/a>
+            &lt;/li>
+        &lt;/ul>
+        &lt;p>
+            Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempore.
+        &lt;/p>
+        &lt;a class="btn-text" href="#">Button&lt;/a>
+    &lt;/div>
+&lt;/div>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="cnt-box cnt-box-testimonials">
+    &lt;img src="image.jpg" alt="" />
+    &lt;p>
+        Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempore.
+    &lt;/p>
+    &lt;p class="testimonial-info">
+        &lt;span>Full name&lt;/span>
+        &lt;span>Company&lt;/span>
+    &lt;/p>
+&lt;/div>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="cnt-box cnt-box-testimonials-bubble">
+    &lt;p>
+        Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempore.
+    &lt;/p>
+    &lt;div class="thumb-bar">
+        &lt;img src="image.jpg" alt="" />
+        &lt;p>
+            &lt;span>Full name&lt;/span>
+            &lt;span>Company&lt;/span>
+        &lt;/p>
+    &lt;/div>
+&lt;/div>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="cnt-box cnt-box-team">
+    &lt;img src="image.jpg" alt="" />
+    &lt;div class="caption">
+        &lt;h2>Full name&lt;/h2>
+        &lt;span>Role&lt;/span>
+        &lt;span class="icon-links">
+            &lt;a href="#" target="_blank">&lt;i class="icon-facebook">&lt;/i>&lt;/a>
+            &lt;a href="#" target="_blank">&lt;i class="icon-twitter">&lt;/i>&lt;/a>
+            &lt;a href="#" target="_blank">&lt;i class="icon-instagram">&lt;/i>&lt;/a>
+        &lt;/span>
+        &lt;p>
+            Lorem ipsum dolor sitamet consectetur eiusmo.
+        &lt;/p>
+    &lt;/div>
+&lt;/div>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="cnt-box cnt-pricing-table">
+    &lt;div class="top-area">
+        &lt;h2>Plan name&lt;/h2>
+        &lt;div class="price">$&lt;span>19&lt;/span>&lt;/div>
+        &lt;p>Per month&lt;/p>
+    &lt;/div>
+    &lt;ul>
+        &lt;li>Feature description&lt;/li>
+        &lt;li>Feature description&lt;/li>
+        &lt;li>Feature description&lt;/li>
+        &lt;li>Feature description&lt;/li>
+        &lt;li>Feature description&lt;/li>
+        &lt;li>Feature description&lt;/li>
+        &lt;li>Feature description&lt;/li>
+    &lt;/ul>
+    &lt;div class="bottom-area">
+        &lt;a class="btn btn-sm" href="#">Order now&lt;/a>
+    &lt;/div>
+&lt;/div>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="cnt-box cnt-call">
+    &lt;i class="im-paper-plane">&lt;/i>
+    &lt;div class="caption">
+        &lt;h2>Call to action&lt;/h2>
+        &lt;p>
+            Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempore.
+        &lt;/p>
+        &lt;a href="#" class="btn btn-xs">Button&lt;/a>
+    &lt;/div>
+&lt;/div>
+</pre>
+                    </div>
+                    <ul class="tab-nav">
+                        <li class="active"><a href="#">Side image</a></li>
+                        <li><a href="#">Top image</a></li>
+                        <li><a href="#">Side icon</a></li>
+                        <li><a href="#">Top icon</a></li>
+                        <li><a href="#">Badge</a></li>
+                        <li><a href="#">Info</a></li>
+                        <li><a href="#">Blog side</a></li>
+                        <li><a href="#">Blog top</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Testimonials bubble</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Pricing table</a></li>
+                        <li><a href="#">Call to action</a></li>
+                    </ul>
+                </div>
+                <hr class="space-sm" />
+                <h4 class="doc-subtitle">Installation</h4>
+                <div class="panel panel-default">
+<pre class="prettyprint doc-code">
+&lt;link rel="stylesheet" href="../themekit/css/content-box.css">
+</pre>
+                </div>
+                <hr class="space" />
+                <h4 id="settings" class="doc-subtitle">Settings</h4>
+                <table class="table table-full-border doc-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Animations</td>
+                            <td>Information</td>
+                            <td>
+                                Go to the <a href="animations.html" class="btn-text">animation</a> page for more details. Animations can be applied to images, texts and buttons.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Boxed</td>
+                            <td>CSS</td>
+                            <td>
+                                Add the class <code>boxed</code> to component to apply a boxed design.
+                                <div class="doc-try">
+                                    Try it
+                                    <a href="#preview" onclick="$('#preview').find('.cnt-box-side,.cnt-box-top,.cnt-box-side-icon,.cnt-box-top-icon,.cnt-box-badge,.cnt-box-blog-side,.cnt-box-blog-top').addClass('boxed'); $('#preview').find('.img-box').renderLoadedImgs();" class="btn-text scroll-to">Boxed design</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Extra field</td>
+                            <td>HTML</td>
+                            <td>
+                                Add the code <code>&lt;div class="extra-field">Text&lt;/div></code> below the title to add a extra field to the component.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Content alignment</td>
+                            <td>--</td>
+                            <td>
+                                Add one of the following classes to the component to align the content: <code>align-center</code>,<code>align-right</code>,<code>align-left</code>.
+                                <div class="doc-try">
+                                    Try it
+                                    <a href="#preview" onclick="$('.cnt-box').removeClass(['align-left','align-right']).addClass('align-center');" class="btn-text scroll-to">Align center</a>
+                                    <a href="#preview" onclick="$('.cnt-box').removeClass(['align-center','align-left']).addClass('align-right');" class="btn-text scroll-to">Align right</a>
+                                    <a href="#preview" onclick="$('.cnt-box').removeClass(['align-center','align-right']).addClass('align-left');" class="btn-text scroll-to">Align left</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Text size</td>
+                            <td>CSS</td>
+                            <td>
+                               Add the one of the following classes to change the text and title sizes: <code>text-xs</code>,<code>text-sm</code>,<code>text-md</code>,<code>text-lg</code>.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Buttons</td>
+                            <td>Information</td>
+                            <td>
+                                Go to the <a href="buttons.html" class="btn-text">buttons</a> page for more details.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Icons</td>
+                            <td>Information</td>
+                            <td>
+                                For the icons list and for more details visit the <a href="icons.html" class="btn-text">icons</a> page.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Link</td>
+                            <td>Information</td>
+                            <td>
+                                Add the attribute <code>data-href="URL"</code> to the component to make the whole component clickable, use the attribute <code>data-target="_blank"</code> 
+                                to open the link in a new window.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>  
+        <div class="container"></div>
+        <div class="footer-bar">
+            <div class="container">
+                &copy; 2019. All rights reserved.
+                Designed and built with passion and hard work by the <a href="https://schiocco.com" target="_blank">schiocco.com</a> team.
+            </div>
+        </div>
+        <link async rel="stylesheet" href="../themekit/media/icons/iconsmind/line-icons.min.css">
+        <script src="../themekit/scripts/prettify.js"></script>
+        <script src="../themekit/scripts/imagesloaded.min.js"></script>
+        <script src="../themekit/scripts/slimscroll.min.js"></script>
+        <script src="../themekit/scripts/tab-accordion.js"></script>
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,521 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Social | Components | Themekit</title>
+    <meta name="description" content="Facebook and twitter feed social networks stream in JQuery and Javascript.">
+    <script src="../themekit/scripts/jquery.min.js"></script>
+    <script src="../themekit/scripts/main.js"></script>
+    <link rel="stylesheet" href="../themekit/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../themekit/css/style.css">
+    <link rel="stylesheet" href="../themekit/css/magnific-popup.css">
+    <link rel="stylesheet" href="../themekit/css/glide.css">
+    <link rel="stylesheet" href="../themekit/css/social.css">
+    <link rel="stylesheet" href="../themekit/css/prettify.css">
+    <link rel="stylesheet" href="../skin.css">
+    <link rel="icon" href="../images/favicon.png">
+    <!-- Extra optional content header -->
+</head>
+<body class="menu-side-cnt">
+    <div id="preloader"></div>
+    <nav class="menu-classic menu-fixed menu-wide doc-main-menu scroll-change" data-menu-anima="fade-in">
+        <div class="container">
+            <div class="menu-brand">
+                <a href="https://themekit.dev/">
+                    <img class="logo-default" src="../images/logo.svg" alt="logo" />
+                    <img class="logo-retina" src="../images/logo.svg" alt="logo" />
+                </a>
+            </div>
+        </div>
+    </nav>
+    <nav class="menu-side menu-side-collapse doc-menu scroll-change">
+        <i class="menu-btn"></i>
+        <div class="menu-cnt">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Getting started</a>
+                    <ul>
+                        <li><a href="#">Start here</a></li>
+                        <li><a href="../css.html">Global CSS</a></li>
+                        <li><a href="../js.html">Global JS</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Components</a>
+                    <ul>
+                        <li><a href="../components/animations.html">Animations</a></li>
+                        <li><a href="../components/buttons.html">Buttons and inputs</a></li>
+                        <li><a href="../components/contact-form.html">Contact form</a></li>
+                        <li><a href="../components/content-box.html">Content box</a></li>
+                        <li><a href="../components/countdown.html">Countdown</a></li>
+                        <li><a href="../components/counter.html">Counter</a></li>
+                        <li><a href="../components/icons.html">Icons</a></li>
+                        <li><a href="../components/image-box.html">Image box</a></li>
+                        <li><a href="../components/inner-menu.html">Inner menu</a></li>
+                        <li><a href="../components/lists.html">Lists</a></li>
+                        <li><a href="../components/map.html">Map</a></li>
+                        <li><a href="../components/media-box.html">Media box</a></li>
+                        <li><a href="../components/progress-bar.html">Progress bar</a></li>
+                        <li><a href="../components/social.html">Social</a></li>
+                        <li><a href="../components/table.html">Table</a></li>
+                        <li><a href="../components/timeline.html">Timeline</a></li>
+                        <li><a href="../components/typography.html">Typography</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Containers</a>
+                    <ul>
+                        <li><a href="../containers/accordion.html">Accordion</a></li>
+                        <li><a href="../containers/album.html">Album</a></li>
+                        <li><a href="../containers/collapse.html">Collapse</a></li>
+                        <li><a href="../containers/fixed-area.html">Fixed area</a></li>
+                        <li><a href="../containers/grid.html">Grid</a></li>
+                        <li><a href="../containers/lightbox.html">Lightbox</a></li>
+                        <li><a href="../containers/masonry.html">Masonry</a></li>
+                        <li><a href="../containers/scroll-box.html">Scroll box</a></li>
+                        <li><a href="../containers/slider.html">Slider</a></li>
+                        <li><a href="../containers/steps.html">Steps</a></li>
+                        <li><a href="../containers/tab.html">Tab</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Sections</a>
+                    <ul>
+                        <li><a href="../sections/base.html">Base</a></li>
+                        <li><a href="../sections/image.html">Image</a></li>
+                        <li><a href="../sections/slider.html">Slider</a></li>
+                        <li><a href="../sections/video.html">Video</a></li>
+                        <li><a href="../sections/block.html">Block</a></li>
+                        <li><a href="../sections/map.html">Map</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Headers</a>
+                    <ul>
+                        <li><a href="../headers/image.html">Image</a></li>
+                        <li><a href="../headers/slider.html">Image slider</a></li>
+                        <li><a href="../headers/video.html">Video</a></li>
+                        <li><a href="../headers/base.html">Base</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../navs.html">Navigation</a>
+                </li>
+                <li>
+                    <a href="../footer.html">Footer</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header id="header" class="header-base doc-title scroll-hide">
+        <div class="container">
+            <h1>Social</h1>
+            <div class="menu-inner">
+                <div><i class="menu-btn"></i><span>Menu</span></div>
+                <ul>
+                    <li class="active"><a href="#preview">Preview</a></li>
+                    <li><a href="#usage">Usage</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-base">
+            <div class="container">
+                <h4 id="preview" class="doc-subtitle">Preview</h4>
+                <div class="tab-box tab-vertical tab-inverse" data-tab-anima="fade-in">
+                    <div class="active panel">
+                        <div class="social-feed social-feed-fb" data-token="EAADDCNoV7r0BANtxELVZAKmva0Ri8IOIYKlGsuAKW37bllvO3Lwra9Du9OM6rBKEn9asTUsMMZCBTnesqPUTIVDP6sCcU5mHE6vjCwZBdxlahOCYpSnJq25LYXSOnLRz8B8JRQqulnZBnTkFm2ZBpn9nMWW6foxqN85ZAebLyfLgZDZD" data-social-id="511238532715807" data-options="limit:2"></div>
+                    </div>
+                    <div class="panel">
+                        <div class="scroll-box" data-height="400" data-rail-color="#c3dff7" data-bar-color="#379cf4">
+                            <div class="social-feed social-feed-fb" data-social-id="511238532715807" data-options="limit:8" data-token="EAADDCNoV7r0BANtxELVZAKmva0Ri8IOIYKlGsuAKW37bllvO3Lwra9Du9OM6rBKEn9asTUsMMZCBTnesqPUTIVDP6sCcU5mHE6vjCwZBdxlahOCYpSnJq25LYXSOnLRz8B8JRQqulnZBnTkFm2ZBpn9nMWW6foxqN85ZAebLyfLgZDZD"></div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="social-feed social-feed-fb social-slider" data-trigger="manual" data-social-id="511238532715807" data-options="comments:false,limit:8,arrows:true,nav:true,controls:out,type:carousel,perView:2" data-token="EAADDCNoV7r0BANtxELVZAKmva0Ri8IOIYKlGsuAKW37bllvO3Lwra9Du9OM6rBKEn9asTUsMMZCBTnesqPUTIVDP6sCcU5mHE6vjCwZBdxlahOCYpSnJq25LYXSOnLRz8B8JRQqulnZBnTkFm2ZBpn9nMWW6foxqN85ZAebLyfLgZDZD"></div>
+                    </div>
+                    <div class="panel">
+                        <div class="social-feed social-feed-tw" data-social-id="twitter" data-options="count:5"></div>
+                    </div>
+                    <div class="panel">
+                        <div class="scroll-box" data-height="400" data-rail-color="#c3dff7" data-bar-color="#379cf4">
+                            <div class="social-feed social-feed-tw" data-social-id="twitter" data-options="count:8"></div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="social-feed social-feed-tw social-slider" data-trigger="manual" data-social-id="twitter" data-options="count:8,arrows:true,nav:true,controls:out,type:carousel,perView:2"></div>
+                    </div>
+                    <div class="panel">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p class="doc-subtitle">Base</p>
+                                <div class="icon-links icon-social">
+                                    <a data-social="share-facebook" class="facebook"><i class="icon-facebook"></i></a>
+                                    <a data-social="share-twitter" class="twitter"><i class="icon-twitter"></i></a>
+                                    <a data-social="share-linkedin" class="linkedin"><i class="icon-linkedin"></i></a>
+                                    <a data-social="share-pinterest" class="pinterest"><i class="icon-pinterest"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <p class="doc-subtitle">Grid</p>
+                                <div class="icon-links icon-links-grid icon-social">
+                                    <a data-social="share-facebook" class="facebook"><i class="icon-facebook"></i></a>
+                                    <a data-social="share-twitter" class="twitter"><i class="icon-twitter"></i></a>
+                                    <a data-social="share-linkedin" class="linkedin"><i class="icon-linkedin"></i></a>
+                                    <a data-social="share-pinterest" class="pinterest"><i class="icon-pinterest"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="space-sm" />
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p class="doc-subtitle">Buttons</p>
+                                <div class="icon-links icon-links-button icon-social">
+                                    <a data-social="share-facebook" class="facebook"><i class="icon-facebook"></i></a>
+                                    <a data-social="share-twitter" class="twitter"><i class="icon-twitter"></i></a>
+                                    <a data-social="share-linkedin" class="linkedin"><i class="icon-linkedin"></i></a>
+                                    <a data-social="share-pinterest" class="pinterest"><i class="icon-pinterest"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <p class="doc-subtitle">Popup</p>
+                                <div class="icon-links icon-links-popup icon-social">
+                                    <i></i>
+                                    <div>
+                                        <a data-social="share-facebook" class="facebook"><i class="icon-facebook"></i></a>
+                                        <a data-social="share-twitter" class="twitter"><i class="icon-twitter"></i></a>
+                                        <a data-social="share-linkedin" class="linkedin"><i class="icon-linkedin"></i></a>
+                                        <a data-social="share-pinterest" class="pinterest"><i class="icon-pinterest"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="tab-nav">
+                        <li class="active"><a href="#">Facebook base</a></li>
+                        <li><a href="#">Facebook scroll box</a></li>
+                        <li><a href="#">Facebook slider</a></li>
+                        <li><a href="#">Twitter base</a></li>
+                        <li><a href="#">Twitter scroll box</a></li>
+                        <li><a href="#">Twitter slider</a></li>
+                        <li><a href="#">Share buttons</a></li>
+                    </ul>
+                </div>
+                <hr class="space" />
+                <h4 id="usage" class="doc-subtitle">Usage</h4>
+                <div class="doc-tab tab-box tab-inverse" data-tab-anima="fade-in">
+                    <div class="panel active">
+<pre class="prettyprint doc-code">
+&lt;div class="social-feed social-feed-fb" data-token="[YOUR-TOKEN]" data-social-id="123" data-options="limit:2">&lt;/div>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="scroll-box" data-height="400" data-rail-color="#c3dff7" data-bar-color="#379cf4">
+    &lt;div class="social-feed social-feed-fb" data-social-id="511238532715807" data-options="limit:8" data-token="[YOUR-TOKEN]">&lt;/div>
+&lt;/div> 
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="social-feed social-feed-fb social-slider" data-social-id="511238532715807" data-options="comments:false,limit:8,arrows:true,nav:true,controls:out,type:carousel,perView:2" data-token="[YOUR-TOKEN]">&lt;/div> 
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="social-feed social-feed-tw" data-social-id="twitter" data-options="count:5">&lt;/div>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="scroll-box" data-height="400" data-rail-color="#c3dff7" data-bar-color="#379cf4">
+    &lt;div class="social-feed social-feed-tw" data-social-id="twitter" data-options="count:8">&lt;/div>
+&lt;/div> 
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="social-feed social-feed-tw social-slider" data-social-id="twitter" data-options="count:8,arrows:true,nav:true,controls:out,type:carousel,perView:2">&lt;/div> 
+</pre>
+                    </div>
+                    <div class="panel">
+                        <p>Base</p>
+<pre class="prettyprint doc-code">
+&lt;div class="icon-links icon-social">
+    &lt;a data-social="share-facebook" class="facebook">&lt;i class="icon-facebook">&lt;/i>&lt;/a>
+    &lt;a data-social="share-twitter" class="twitter">&lt;i class="icon-twitter">&lt;/i>&lt;/a>
+    &lt;a data-social="share-linkedin" class="linkedin">&lt;i class="icon-linkedin">&lt;/i>&lt;/a>
+    &lt;a data-social="share-pinterest" class="pinterest">&lt;i class="icon-pinterest">&lt;/i>&lt;/a>
+&lt;/div>
+</pre>
+                        <p>Popup</p>
+<pre class="prettyprint doc-code">
+&lt;div class="icon-links icon-links-popup icon-social">
+    &lt;i>&lt;/i>
+    &lt;div>
+        &lt;a data-social="share-facebook" class="facebook">&lt;i class="icon-facebook">&lt;/i>&lt;/a>
+        &lt;a data-social="share-twitter" class="twitter">&lt;i class="icon-twitter">&lt;/i>&lt;/a>
+        &lt;a data-social="share-linkedin" class="linkedin">&lt;i class="icon-linkedin">&lt;/i>&lt;/a>
+        &lt;a data-social="share-pinterest" class="pinterest">&lt;i class="icon-pinterest">&lt;/i>&lt;/a>
+    &lt;/div>
+&lt;/div> 
+</pre>
+                    </div>
+                    <ul class="nav tab-nav">
+                        <li class="active"><a href="#">Facebook base</a></li>
+                        <li><a href="#">Facebook scroll box</a></li>
+                        <li><a href="#">Facebook slider</a></li>
+                        <li><a href="#">Twitter base</a></li>
+                        <li><a href="#">Twitter scroll box</a></li>
+                        <li><a href="#">Twitter slider</a></li>
+                        <li><a href="#">Share buttons</a></li>
+                    </ul>
+                </div>
+                <hr class="space-sm" />
+                <h4 class="doc-subtitle">Installation</h4>
+<pre class="prettyprint doc-code">
+&lt;link rel="stylesheet" href='themekit/css/social.css'>
+&lt;script src='themekit/scripts/social.min.js'>&lt;/script&gt; 
+</pre>
+                <hr class="space" />
+                <h4 id="settings" class="doc-subtitle">Settings</h4>
+                <table class="table table-full-border doc-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Facebook initialization</td>
+                            <td>--</td>
+                            <td>
+                                <ul class="icon-list icon-line">
+                                    <li>
+                                        Insert into the attribute <code>data-social-id=""</code> the ID of the Facebook page you want to show.
+                                        You can get the page ID from <a class="btn-text" href="http://findmyfbid.com/" target="_blank" rel="nofollow">findmyfbid.com</a>.
+                                        You can show the feeds only of the pages you own.
+                                    </li>
+                                    <li>Insert into the attribute <code>data-token=""</code> your personal Facebook token. Read the instructions below for more details.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Facebook token</td>
+                            <td>--</td>
+                            <td>
+                                <ul class="icon-list icon-line">
+                                    <li>You can show the feeds only of the pages you own.</li>
+                                    <li>Sign up for <a class="btn-text" href="https://developers.facebook.com/" target="_blank" rel="nofollow">facebook developers</a> channel.</li>
+                                    <li>Create a Facebook App or use an existing app if you already have one. <a href="../images/docs/fb-1.jpg" class="doc-picture lightbox" data-lightbox-anima="fade-in"></a></li>
+                                    <li>Copy, App ID, App Secret.</li>
+                                    <li>Navigate to <a class="btn-text" href="https://developers.facebook.com/tools/explorer" target="_blank" rel="nofollow">Facebook Graph API Explorer</a> to generate short-lived access token.</li>
+                                    <li>Select your app from the top right Application drop-down menu.</li>
+                                    <li>In the next drop-down just below the previous one select "Get user access token". <a href="../images/docs/fb-2.jpg" class="doc-picture lightbox" data-lightbox-anima="fade-in"></a></li>
+                                    <li>In the popup window that appear select "publish pages" and "manager pages". <a href="../images/docs/fb-3.jpg" class="doc-picture lightbox" data-lightbox-anima="fade-in"></a> </li>
+                                    <li>Click "Get access token" and copy the access token.</li>
+                                    <li>Navigate to <a class="btn-text" href="https://developers.facebook.com/tools/accesstoken" target="_blank" rel="nofollow">Access Token Tool</a> and click the "Debug" button of your app at right side for the user access token.<a href="../images/docs/fb-4.jpg" class="doc-picture lightbox" data-lightbox-anima="fade-in"></a></li>
+                                    <li>Go on bottom click "Extend Access Token" and copy the token.</li>
+                                    <li>Again, go to <a class="btn-text" href="https://developers.facebook.com/tools/explorer" target="_blank" rel="nofollow">Facebook Graph API Explorer</a> and paste the extened token you just copied at the step above.</li>
+                                    <li>Change the API endpoint to access "/me/accounts" and click "Submit".<a href="../images/docs/fb-5.jpg" class="doc-picture lightbox" data-lightbox-anima="fade-in"></a></li>
+                                    <li>On the results area copy the new generated access token. This token never expire and is the one you will insert into the attribute <code>data-token=""</code> of the component.</li>
+                                    <li>To be sure the token never expire open <a class="btn-text" href="https://developers.facebook.com/tools/debug/accesstoken/" target="_blank" rel="nofollow">Facebook Debug Tool</a> paste the token and click "Debug" to check the expiration value. <a href="../images/docs/fb-6.jpg" class="doc-picture lightbox" data-lightbox-anima="fade-in"></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Twitter initialization</td>
+                            <td>--</td>
+                            <td>
+                                Insert into the attribute <code>data-social-id=""</code>the Twitter channel name without the @. You can find the channell name from the URL of your browser.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Scroll box</td>
+                            <td>--</td>
+                            <td>
+                                The scroll box mode require the following script installation: <code>&lt;script src='themekit/scripts/slimscroll.min.js'>&lt;/script&gt; </code>.<br />
+                                For more details visit the <a href="../containers/scroll-box.html" class="btn-text">scroll box</a> page.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Slider</td>
+                            <td>--</td>
+                            <td>
+                                The slider mode require the following script and style installation:
+<pre class="prettyprint doc-code">
+&lt;script src='themekit/scripts/glide.min.js'>&lt;/script>
+&lt;script src='themekit/css/glide.css'>&lt;/script>
+</pre>
+                                Add the class <code>social-slider</code> to the component and the slider options into the attribute <code>data-options</code>.
+                                Add the attribute <code>data-trigger="manual"</code> to the component if it's inside another container.
+                                For more details visit the <a href="../containers/slider.html" class="btn-text">slider</a> page.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Facebook options</td>
+                            <td>Attribute</td>
+                            <td>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td><code>limit:10</code></td>
+                                            <td>
+                                                Items number, any amount from 1 to 15.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>comments:true</code></td>
+                                            <td>Hide or show the comments.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>timeout:400</code></td>
+                                            <td>Any amount (in milliseconds)</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>speed:400</code></td>
+                                            <td>Any amount (in milliseconds)</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>effect:slide</code></td>
+                                            <td>Choices are slide, fade or none.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>locale: en_EN</code></td>
+                                            <td>Your contry code.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>avatar_size: square</code></td>
+                                            <td>Choices are square, small, normal or large.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>message_length: 200</code></td>
+                                            <td>Any amount you like. Above 0 shortens the message length.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>show_guest_entries: true</code></td>
+                                            <td>Hide or show the guest entries.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>text_labels: {Translations}</code></td>
+                                            <td>Insert here your translations, go to the plugin documentation for more details.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br />
+                                You can pass the plugin options directly from the component with the attribute <code>data-options="optione:value,optione:value, ..."</code>.
+                                To view the full options list visit the <a class="btn-text" href="https://github.com/thomasclausen/jquery-facebook-wall" target="_blank" rel="nofollow">plugin documentation</a> page.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Twitter options</td>
+                            <td>Attribute</td>
+                            <td>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td><code>list: null</code></td>
+                                            <td>List name to load tweets from. You also must define the username of the list owner.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>hashtag: null</code></td>
+                                            <td>Option to load tweets with a specific hashtag.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>count: 10</code></td>
+                                            <td>Number of tweets you want to display.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>hideReplies: false</code></td>
+                                            <td>Set true if you want to hide "@" replies as well.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>dateFormat: %b/%d/%Y</code></td>
+                                            <td>Your date format, refernce this table for available formats.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br />
+                                You can pass the plugin options directly from the component with the attribute <code>data-options="optione:value,optione:value, ..."</code>.
+                                To view the full options list visit the <a class="btn-text" href="https://github.com/sonnyt/tweetie" target="_blank" rel="nofollow">plugin documentation</a> page.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Share buttons type</td>
+                            <td>CSS</td>
+                            <td>
+                                Add one of the following classes to the components to change the buttons type: <code>icon-links-grid</code>,<code>icon-links-button</code>,<code>icon-links-popup</code>.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Share buttons size</td>
+                            <td>CSS</td>
+                            <td>
+                                Add the class <code>icon-lg</code> to the component to enlarge the icons.
+                                <div class="doc-try">
+                                    Try it
+                                    <a href="#preview" onclick="$('.icon-social').addClass('icon-lg');" class="btn-text scroll-to">Icon lg</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Share buttons social colors</td>
+                            <td>CSS</td>
+                            <td>
+                                Add the class <code>social-colors</code> to the component to apply the social colors to the buttons. 
+                                Use the class <code>social-colors-hover</code> to show the social colors only on mouse hover.
+                                <div class="doc-try">
+                                    Try it
+                                    <a href="#preview" onclick="$('.icon-social').removeClass('social-colors-hover').addClass('social-colors');" class="btn-text scroll-to">Social colors</a>
+                                    <a href="#preview" onclick="$('.icon-social').removeClass('social-colors').addClass('social-colors-hover');" class="btn-text scroll-to">Social colors hover</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Share buttons URL</td>
+                            <td>Attribute</td>
+                            <td>
+                                Add the attribute <code>data-social-url="URL"</code> to the social item to link it to a different page. By default the URL link to the current page.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr class="space" />
+                <h4 id="related" class="doc-subtitle">Related content</h4>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <a href="https://github.com/thomasclausen/jquery-facebook-wall" target="_blank" rel="nofollow" class="btn btn-xs full-width">Facebook documentation</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <a href="https://github.com/sonnyt/tweetie" target="_blank" rel="nofollow" class="btn btn-xs full-width">Twitter documentation</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container"></div>
+        <div class="footer-bar">
+            <div class="container">
+                &copy; 2019. All rights reserved.
+                Designed and built with passion and hard work by the <a href="https://schiocco.com" target="_blank">schiocco.com</a> team.
+            </div>
+        </div>
+        <link async rel="stylesheet" href="../themekit/media/icons/iconsmind/line-icons.min.css">
+        <script src="../themekit/scripts/imagesloaded.min.js"></script>
+        <script src="../themekit/scripts/magnific-popup.min.js"></script>
+        <script src="../themekit/scripts/glide.min.js"></script>
+        <script src="../themekit/scripts/social.min.js"></script>
+        <script src="../themekit/scripts/slimscroll.min.js"></script>
+        <script src="../themekit/scripts/tab-accordion.js"></script>
+        <script src="../themekit/scripts/prettify.js"></script>
+        
+    </footer>
+</body>
+</html>

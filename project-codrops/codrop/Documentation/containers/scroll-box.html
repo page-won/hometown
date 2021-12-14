@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scroll box | Containers | Themekit</title>
+    <meta name="description" content="Various HTML components for build modern HTML websites. Part II.">
+    <script src="../themekit/scripts/jquery.min.js"></script>
+    <script src="../themekit/scripts/main.js"></script>
+    <link rel="stylesheet" href="../themekit/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../themekit/css/style.css">
+    <link rel="stylesheet" href="../themekit/css/prettify.css">
+    <link rel="stylesheet" href="../skin.css">
+    <link rel="icon" href="../images/favicon.png">
+</head>
+<body class="menu-side-cnt">
+    <div id="preloader"></div>
+    <nav class="menu-classic menu-fixed menu-wide doc-main-menu scroll-change" data-menu-anima="fade-in">
+        <div class="container">
+            <div class="menu-brand">
+                <a href="https://themekit.dev/">
+                    <img class="logo-default" src="../images/logo.svg" alt="logo" />
+                    <img class="logo-retina" src="../images/logo.svg" alt="logo" />
+                </a>
+            </div>
+        </div>
+    </nav>
+    <nav class="menu-side menu-side-collapse doc-menu scroll-change">
+        <i class="menu-btn"></i>
+        <div class="menu-cnt">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Getting started</a>
+                    <ul>
+                        <li><a href="#">Start here</a></li>
+                        <li><a href="../css.html">Global CSS</a></li>
+                        <li><a href="../js.html">Global JS</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Components</a>
+                    <ul>
+                        <li><a href="../components/animations.html">Animations</a></li>
+                        <li><a href="../components/buttons.html">Buttons and inputs</a></li>
+                        <li><a href="../components/contact-form.html">Contact form</a></li>
+                        <li><a href="../components/content-box.html">Content box</a></li>
+                        <li><a href="../components/countdown.html">Countdown</a></li>
+                        <li><a href="../components/counter.html">Counter</a></li>
+                        <li><a href="../components/icons.html">Icons</a></li>
+                        <li><a href="../components/image-box.html">Image box</a></li>
+                        <li><a href="../components/inner-menu.html">Inner menu</a></li>
+                        <li><a href="../components/lists.html">Lists</a></li>
+                        <li><a href="../components/map.html">Map</a></li>
+                        <li><a href="../components/media-box.html">Media box</a></li>
+                        <li><a href="../components/progress-bar.html">Progress bar</a></li>
+                        <li><a href="../components/social.html">Social</a></li>
+                        <li><a href="../components/table.html">Table</a></li>
+                        <li><a href="../components/timeline.html">Timeline</a></li>
+                        <li><a href="../components/typography.html">Typography</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Containers</a>
+                    <ul>
+                        <li><a href="../containers/accordion.html">Accordion</a></li>
+                        <li><a href="../containers/album.html">Album</a></li>
+                        <li><a href="../containers/collapse.html">Collapse</a></li>
+                        <li><a href="../containers/fixed-area.html">Fixed area</a></li>
+                        <li><a href="../containers/grid.html">Grid</a></li>
+                        <li><a href="../containers/lightbox.html">Lightbox</a></li>
+                        <li><a href="../containers/masonry.html">Masonry</a></li>
+                        <li><a href="../containers/scroll-box.html">Scroll box</a></li>
+                        <li><a href="../containers/slider.html">Slider</a></li>
+                        <li><a href="../containers/steps.html">Steps</a></li>
+                        <li><a href="../containers/tab.html">Tab</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Sections</a>
+                    <ul>
+                        <li><a href="../sections/base.html">Base</a></li>
+                        <li><a href="../sections/image.html">Image</a></li>
+                        <li><a href="../sections/slider.html">Slider</a></li>
+                        <li><a href="../sections/video.html">Video</a></li>
+                        <li><a href="../sections/block.html">Block</a></li>
+                        <li><a href="../sections/map.html">Map</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Headers</a>
+                    <ul>
+                        <li><a href="../headers/image.html">Image</a></li>
+                        <li><a href="../headers/slider.html">Image slider</a></li>
+                        <li><a href="../headers/video.html">Video</a></li>
+                        <li><a href="../headers/base.html">Base</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../navs.html">Navigation</a>
+                </li>
+                <li>
+                    <a href="../footer.html">Footer</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header id="header" class="header-base doc-title scroll-hide">
+        <div class="container">
+            <h1>Scroll box</h1>
+            <div class="menu-inner">
+                <div><i class="menu-btn"></i><span>Menu</span></div>
+                <ul>
+                    <li class="active"><a href="#preview">Preview</a></li>
+                    <li><a href="#usage">Usage</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                    <li><a href="#related">Related</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-base">
+            <div class="container">
+                <h4 id="preview" class="doc-subtitle">Preview</h4>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="scroll-box disable-sm" data-height="250" data-rail-color="#c3dff7" data-bar-color="#379cf4">
+                            <p>
+                                Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                                sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                                ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                                dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                                laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+                                esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                                sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                                ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                                dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                                laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+                                esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="scroll-box" data-height=".col-lg-6" data-rail-color="#c3dff7" data-bar-color="#379cf4">
+                            <p>
+                                Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                                sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                                ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                                dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                                laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+                                esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                                sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+                                ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                                dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                                laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+                                esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="space" />
+                <h4 id="usage" class="doc-subtitle">Usage</h4>
+                <pre class="prettyprint doc-code">
+&lt;div class="scroll-box" data-height="250" data-rail-color="#c3dff7" data-bar-color="#379cf4">
+    Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+    beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+    ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius.
+&lt;/div>
+</pre>
+                <hr class="space-sm" />
+                <h4 class="doc-subtitle">Installation</h4>
+<pre class="prettyprint doc-code">
+&lt;script src='themekit/scripts/slimscroll.min.js'>&lt;/script>
+</pre>
+                <hr class="space" />
+                <h4 id="settings" class="doc-subtitle">Settings</h4>
+                <table class="table table-full-border doc-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Initialization</td>
+                            <td>--</td>
+                            <td>
+                                Add the class <code>scroll-box</code> to the component and the attribute <code>data-height="value"</code> to set the height in px of the box when it's closed.
+                                This attribute accept various values, see below for more details.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Height</td>
+                            <td>Attribute</td>
+                            <td>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td><code>data-height="123"</code></td>
+                                            <td>
+                                                Fixed height in px.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>data-height=".your-class"</code></td>
+                                            <td>
+                                                Use the height of the parent container with class .your-class.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>data-height="#your-id"</code></td>
+                                            <td>
+                                                Use the height of the parent container with ID your-id.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>data-height="fullscreen"</code></td>
+                                            <td>
+                                                Use the height of the user's screen.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                Add the attribute <code>data-offset="123"</code> to adjust the height when it's setted to ID, class or fullscreen, this feature subtract the offset value from the original height.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Colors</td>
+                            <td>attribute</td>
+                            <td>
+                                Add the attribute <code>data-rail-color="#c3dff7"</code> to change the rail color and the attribute <code>data-bar-color="#379cf4"</code> to change the background bar color.
+                                To get the color you want visit <a class="btn-text" href="https://htmlcolorcodes.com/color-picker/" target="_blank" rel="nofollow">htmlcolorcodes.com/color-picker/</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Responsive</td>
+                            <td>CSS</td>
+                            <td>
+                                Add the class <code>disable-md</code> to the component to disable the scroll only on medium screens and the class <code>disable-sm</code> to disable the scroll only on small screens.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Options</td>
+                            <td>Attribute</td>
+                            <td>
+                                You can pass the plugin options directly from the component with the attribute <code>data-options="optione:value,optione:value, ..."</code>.
+                                To view the full options list visit the <a class="btn-text" href="http://rocha.la/jQuery-slimScroll" target="_blank" rel="nofollow">plugin documentation</a> page.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Scroll position</td>
+                            <td>Information</td>
+                            <td>
+                                The component automatically add the class <code>scroll-pos-top</code> when the scroll reach the top and the class <code>scroll-pos-bottom</code> when it reach the bottom. The class <code>scrolling</code> is added while scrolling.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr class="space" />
+                <h4 id="related" class="doc-subtitle">Related content</h4>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <a href="http://rocha.la/jQuery-slimScroll" target="_blank" rel="nofollow" class="btn btn-xs full-width">Plugin documentation</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container"></div>
+        <div class="footer-bar">
+            <div class="container">
+                &copy; 2019. All rights reserved.
+                Designed and built with passion and hard work by the <a href="https://schiocco.com" target="_blank">schiocco.com</a> team.
+            </div>
+        </div>
+        <link async rel="stylesheet" href="../themekit/media/icons/iconsmind/line-icons.min.css">
+        <script src="../themekit/scripts/slimscroll.min.js"></script>
+        <script src="../themekit/scripts/tab-accordion.js"></script>
+        <script src="../themekit/scripts/prettify.js"></script>
+        
+    </footer>
+</body>
+</html>

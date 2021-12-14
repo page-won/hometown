@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 652 652" style="enable-background:new 0 0 652 652;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:url(#SVGID_3_);}
+	.st1{fill:#022169;}
+	.st2{fill:#E2231A;}
+	.st3{fill:#0082CA;}
+	.st4{fill:#BA141A;}
+	.st5{fill:#E11B22;}
+	.st6{fill:#A70E13;}
+	.st7{clip-path:url(#SVGID_5_);fill:url(#SVGID_6_);}
+	.st8{fill:#0080B6;}
+	.st9{fill:#006692;}
+	.st10{fill:#00326C;}
+	.st11{fill:#004990;}
+</style>
+<g>
+	<defs>
+		<polygon id="SVGID_1_" points="143,277.4 115.3,318.7 88,277.4 15.2,277.4 82.9,376.8 147.7,376.8 215.8,277.4 		"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-306.1552" y1="559.9885" x2="-304.59" y2="559.9885" gradientTransform="matrix(128.1472 0 0 -128.1472 39248.1016 72088.0391)">
+		<stop  offset="0" style="stop-color:#939598"/>
+		<stop  offset="0.1966" style="stop-color:#F8F8F8"/>
+		<stop  offset="0.3933" style="stop-color:#939598"/>
+		<stop  offset="0.5337" style="stop-color:#F8F8F8"/>
+		<stop  offset="0.6798" style="stop-color:#939598"/>
+		<stop  offset="0.8595" style="stop-color:#F8F8F8"/>
+		<stop  offset="1" style="stop-color:#939598"/>
+	</linearGradient>
+	<rect x="15.2" y="277.4" class="st0" width="200.6" height="99.4"/>
+</g>
+<g>
+	<polygon class="st1" points="85.4,372.1 145.2,372.1 115.3,327.2 	"/>
+	<polygon class="st2" points="85.5,282 24.1,282 85.4,372.1 115.3,327.2 	"/>
+	<polygon class="st3" points="145.4,282 115.3,327.2 145.2,372.1 206.7,282 	"/>
+	<polygon class="st4" points="87.7,368.6 30.6,285.4 24.1,282 85.4,372.1 	"/>
+	<polygon class="st5" points="85.5,282 24.1,282 30.6,285.4 83.6,285.4 	"/>
+	<polygon class="st6" points="83.6,285.4 85.5,282 115.3,327.2 113.2,330.3 	"/>
+</g>
+<g>
+	<defs>
+		<polygon id="SVGID_4_" points="115.3,327.2 117.4,330.3 147.2,285.4 145.4,282 		"/>
+	</defs>
+	<clipPath id="SVGID_5_">
+		<use xlink:href="#SVGID_4_"  style="overflow:visible;"/>
+	</clipPath>
+	
+		<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="-294.7171" y1="559.0496" x2="-293.1519" y2="559.0496" gradientTransform="matrix(20.3762 0 0 -20.3762 6119.9355 11697.458)">
+		<stop  offset="0" style="stop-color:#0096D3"/>
+		<stop  offset="5.618000e-003" style="stop-color:#0096D3"/>
+		<stop  offset="1" style="stop-color:#84C4E7"/>
+	</linearGradient>
+	<rect x="115.3" y="282" class="st7" width="31.9" height="48.3"/>
+</g>
+<g>
+	<polygon class="st8" points="200.3,285.4 206.7,282 145.4,282 147.2,285.4 	"/>
+	<polygon class="st9" points="206.7,282 200.3,285.4 142.9,368.6 145.2,372.1 	"/>
+	<polygon class="st10" points="142.9,368.6 87.7,368.6 85.4,372.1 145.2,372.1 	"/>
+	<polygon class="st11" points="268.1,310.5 251,354 233.8,310.5 212.9,310.5 240.7,376.8 260.5,376.8 288,310.5 	"/>
+	<rect x="335.5" y="310" class="st11" width="18.4" height="66.9"/>
+	<rect x="471.5" y="310" class="st11" width="18.4" height="66.9"/>
+	<polygon class="st11" points="395.6,324.7 385.8,359.3 375.8,324.7 356.4,324.7 373.8,376.9 396.2,376.9 413.6,324.7 	"/>
+	<polygon class="st11" points="495.8,324.7 495.7,376.9 514.2,376.9 514.2,324.7 	"/>
+	<rect x="495.7" y="310" class="st11" width="18.4" height="9.8"/>
+	<path class="st11" d="M556,324.7h-36v52.2h18.4v-41.4h13.8v41.4h18.4V338C570.7,327.6,564.1,324.7,556,324.7"/>
+	<path class="st11" d="M452.2,376.9c9,0,13.5-4.3,13.5-12.3c0-7.1,0-27,0-27c0-10.7-7.1-12.8-13.6-12.8h-24
+		c-6.6,0-13.6,2.2-13.6,12.8c0,0,0,20,0,27c0,8,4.5,12.3,13.5,12.3H452.2z M433,366.1l0-30.6h14.2v30.6H433z"/>
+	<path class="st11" d="M329.4,338c0-10.5-6.7-13.3-15.7-13.3h-26.3l-4.1,9.8h27.8v7.4h-18.6c-7.6,0-14.7,2.5-14.7,13.4
+		c0,6.3,0,10.1,0,10.1c0,7.8,4.7,11.5,14.2,11.5c7.3,0,37.4,0,37.4,0V338z M311.1,366.1h-15.6v-14.3h15.6L311.1,366.1z"/>
+	<path class="st11" d="M576.2,338.7v24.8c0,4.8,1.7,7.6,2.8,8.9c2.4,2.8,6.2,4.4,13,4.4h29.4l2.6-9.9h-29.4v-8.4H614
+		c8.1,0,13.1-3,13.1-12.1c0-6.3,0-9.7,0-9.7c0-9.5-6.3-12.1-14.5-12.1c-4.8,0-12.4,0-20.8,0C582.6,324.7,576.2,328.7,576.2,338.7
+		 M594.5,335.5h15.6v13.3h-15.6L594.5,335.5z"/>
+	<path class="st1" d="M157.1,373.2v-1.1h4.2v1.1h-1.4v3.6h-1.4v-3.6H157.1z M163.7,372.1l0.9,2.7l0.9-2.7h2v4.8h-1.3v-3.5l-1,3.5
+		h-1.1l-1-3.4v3.4h-1.3v-4.8H163.7z"/>
+	<path class="st1" d="M628.5,373.2v-1.1h4.2v1.1h-1.4v3.6h-1.4v-3.6H628.5z M635.1,372.1l0.9,2.7l0.9-2.7h2v4.8h-1.3v-3.5l-1,3.5
+		h-1.1l-1-3.4v3.4h-1.3v-4.8H635.1z"/>
+</g>
+</svg>

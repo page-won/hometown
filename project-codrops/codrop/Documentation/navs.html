@@ -1,0 +1,1087 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 10]> <html  lang="en" class="iex"> <![endif]-->
+<!--[if (gt IE 10)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu documentation | Menus | Themekit</title>
+    <meta name="description" content="Themekit menu main documentation.">
+    <script src="themekit/scripts/jquery.min.js"></script>
+    <script src="themekit/scripts/main.js"></script>
+    <link rel="stylesheet" href="themekit/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="themekit/css/style.css">
+    <link rel="stylesheet" href="themekit/css/prettify.css">
+    <link rel="stylesheet" href="skin.css">
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body class="menu-side-cnt">
+    <div id="preloader"></div>
+    <nav class="menu-classic menu-fixed menu-wide doc-main-menu scroll-change" data-menu-anima="fade-in">
+        <div class="container">
+            <div class="menu-brand">
+                <a href="https://themekit.dev/">
+                    <img class="logo-default" src="images/logo.svg" alt="logo" />
+                    <img class="logo-retina" src="images/logo.svg" alt="logo" />
+                </a>
+            </div>
+        </div>
+    </nav>
+    <nav class="menu-side menu-side-collapse doc-menu scroll-change">
+        <i class="menu-btn"></i>
+        <div class="menu-cnt">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Getting started</a>
+                    <ul>
+                        <li><a href="#">Start here</a></li>
+                        <li><a href="css.html">Global CSS</a></li>
+                        <li><a href="js.html">Global JS</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Components</a>
+                    <ul>
+                        <li><a href="components/animations.html">Animations</a></li>
+                        <li><a href="components/buttons.html">Buttons and inputs</a></li>
+                        <li><a href="components/contact-form.html">Contact form</a></li>
+                        <li><a href="components/content-box.html">Content box</a></li>
+                        <li><a href="components/countdown.html">Countdown</a></li>
+                        <li><a href="components/counter.html">Counter</a></li>
+                        <li><a href="components/icons.html">Icons</a></li>
+                        <li><a href="components/image-box.html">Image box</a></li>
+                        <li><a href="components/inner-menu.html">Inner menu</a></li>
+                        <li><a href="components/lists.html">Lists</a></li>
+                        <li><a href="components/map.html">Map</a></li>
+                        <li><a href="components/media-box.html">Media box</a></li>
+                        <li><a href="components/progress-bar.html">Progress bar</a></li>
+                        <li><a href="components/social.html">Social</a></li>
+                        <li><a href="components/table.html">Table</a></li>
+                        <li><a href="components/timeline.html">Timeline</a></li>
+                        <li><a href="components/typography.html">Typography</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Containers</a>
+                    <ul>
+                        <li><a href="containers/accordion.html">Accordion</a></li>
+                        <li><a href="containers/album.html">Album</a></li>
+                        <li><a href="containers/collapse.html">Collapse</a></li>
+                        <li><a href="containers/fixed-area.html">Fixed area</a></li>
+                        <li><a href="containers/grid.html">Grid</a></li>
+                        <li><a href="containers/lightbox.html">Lightbox</a></li>
+                        <li><a href="containers/masonry.html">Masonry</a></li>
+                        <li><a href="containers/scroll-box.html">Scroll box</a></li>
+                        <li><a href="containers/slider.html">Slider</a></li>
+                        <li><a href="containers/steps.html">Steps</a></li>
+                        <li><a href="containers/tab.html">Tab</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Sections</a>
+                    <ul>
+                        <li><a href="sections/base.html">Base</a></li>
+                        <li><a href="sections/image.html">Image</a></li>
+                        <li><a href="sections/slider.html">Slider</a></li>
+                        <li><a href="sections/video.html">Video</a></li>
+                        <li><a href="sections/block.html">Block</a></li>
+                        <li><a href="sections/map.html">Map</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Headers</a>
+                    <ul>
+                        <li><a href="headers/image.html">Image</a></li>
+                        <li><a href="headers/slider.html">Image slider</a></li>
+                        <li><a href="headers/video.html">Video</a></li>
+                        <li><a href="headers/base.html">Base</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="navs.html">Navigation</a>
+                </li>
+                <li>
+                    <a href="footer.html">Footer</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header id="header" class="header-base doc-title scroll-hide">
+        <div class="container">
+            <h1>Navigation</h1>
+            <div class="menu-inner">
+                <div><i class="menu-btn"></i><span>Menu</span></div>
+                <ul>
+                    <li class="active"><a href="#preview">Preview</a></li>
+                    <li><a href="#usage">Usage</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                    <li><a href="#dropdown">Dropdown</a></li>
+                    <li><a href="#components">Components</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-base">
+            <div class="container">
+                <h4 id="usage" class="doc-subtitle">Usage</h4>
+                <div class="doc-tab tab-box tab-inverse" data-tab-anima="fade-in">
+                    <div class="panel active">
+<pre class="prettyprint doc-code">
+&lt;nav class="menu-classic" data-menu-anima="fade-in">
+    &lt;div class="container">
+        &lt;div class="menu-brand">
+            &lt;a href="#">
+                &lt;img class="logo-default" src="logo.png" alt="logo" />
+                &lt;img class="logo-retina" src="logo.png" alt="logo" />
+            &lt;/a>
+        &lt;/div>
+        &lt;i class="menu-btn">&lt;/i>
+        &lt;div class="menu-cnt">
+            &lt;ul>
+                &lt;li>
+                    &lt;a href="#">Menu item&lt;/a>
+                &lt;/li>
+                &lt;li class="dropdown">
+                    &lt;a href="#">Menu item&lt;/a>
+                    &lt;ul>
+                        &lt;li class="dropdown-submenu">
+                            &lt;a>Dropdown&lt;/a>
+                            &lt;ul>
+                                &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                                &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                                &lt;li class="dropdown-submenu">
+                                    &lt;a href="#">Dropdown&lt;/a>
+                                    &lt;ul>
+                                        &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                                        &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                                        &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                                    &lt;/ul>
+                                &lt;/li>
+                            &lt;/ul>
+                        &lt;/li>
+                        &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                        &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                        &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                    &lt;/ul>
+                &lt;/li>
+            &lt;/ul>
+            &lt;div class="menu-right">
+                &lt;!--SEARCH A-->
+                &lt;form role="search" method="get" id="searchform" class="search-bar">
+                    &lt;input type="text" class="form-control" placeholder="Search for...">
+                    &lt;input type="submit" value="Go">
+                &lt;/form>
+                &lt;!--SEARCH B-->
+                &lt;form role="search" method="get" id="searchform" class="search-btn">
+                    &lt;div class="search-box-menu">
+                        &lt;input type="text" placeholder="Search ...">
+                        &lt;i>&lt;/i>
+                    &lt;/div>
+                &lt;/form>
+                &lt;!--SOCIAL ICONS-->
+                &lt;div class="icon-links icon-social social-colors-hover">
+                    &lt;a target="_blank" class="facebook" href="#">&lt;i class="icon-facebook">&lt;/i>&lt;/a>
+                    &lt;a target="_blank" class="twitter" href="#">&lt;i class="icon-twitter">&lt;/i>&lt;/a>
+                    &lt;a target="_blank" class="linkedin" href="#">&lt;i class="icon-linkedin">&lt;/i>&lt;/a>
+                &lt;/div>
+                &lt;!--SHOP MENU-->
+                &lt;div class="shop-menu-cnt">
+                    &lt;i>&lt;span class="cart-count">0&lt;/span>&lt;/i>
+                    &lt;div class="shop-menu">
+                        &lt;ul class="shop-cart">
+                            &lt;li class="cart-item">
+                                &lt;img src="image.jpg" alt="">
+                                &lt;div class="cart-content">
+                                    &lt;h5>Product 1&lt;/h5>
+                                    &lt;span class="cart-quantity">
+                                        1 x $99.00
+                                    &lt;/span>
+                                &lt;/div>
+                            &lt;/li>
+                            &lt;li class="cart-item">
+                                &lt;img src="image.jpg" alt="">
+                                &lt;div class="cart-content">
+                                    &lt;h5>Product 2&lt;/h5>
+                                    &lt;span class="cart-quantity">
+                                        1 x $99.00
+                                    &lt;/span>
+                                &lt;/div>
+                            &lt;/li>
+                        &lt;/ul>
+                        &lt;p class="cart-total">
+                            Subtotal: &lt;span>$299.00&lt;/span>
+                        &lt;/p>
+                        &lt;p class="cart-buttons">
+                            &lt;a href="#" class="cart-view">View Cart&lt;/a>
+                            &lt;a href="#" class="cart-checkout">Checkout&lt;/a>
+                        &lt;/p>
+                    &lt;/div>
+                &lt;/div>
+                &lt;!--LAN MEMU-->
+                &lt;ul class="lan-menu">
+                    &lt;li class="dropdown">
+                        &lt;a href="#">&lt;img src="image.jpg" />EN &lt;/a>
+                        &lt;ul>
+                            &lt;li>&lt;a href="#">&lt;img src="image.jpg" />IT&lt;/a>&lt;/li>
+                        &lt;/ul>
+                    &lt;/li>
+                &lt;/ul>
+            &lt;/div>
+            &lt;div class="clear">&lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/nav> 
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;nav class="menu-classic" data-menu-anima="fade-in">
+    &lt;div class="container">
+        &lt;div class="menu-brand">
+            &lt;a href="#">
+                &lt;img class="logo-default" src="logo.png" alt="logo" />
+                &lt;img class="logo-retina" src="logo.png" alt="logo" />
+            &lt;/a>
+        &lt;/div>
+        &lt;i class="menu-btn">&lt;/i>
+        &lt;div class="menu-cnt">
+            &lt;ul>
+                &lt;li>
+                    &lt;a href="#">Menu item&lt;/a>
+                &lt;/li>
+                &lt;li>
+                    &lt;a href="#">Menu item&lt;/a>
+                &lt;/li>
+                &lt;li>
+                    &lt;a href="#">Menu item&lt;/a>
+                &lt;/li>
+            &lt;/ul>
+            &lt;div class="menu-right">
+
+            &lt;/div>
+            &lt;div class="clear">&lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/nav> 
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;nav class="menu-top-logo" data-menu-anima="fade-in">
+    &lt;div class="container">
+        &lt;div class="menu-brand">
+            &lt;a href="#">
+                &lt;img class="logo-default" src="logo.png" alt="logo" />
+                &lt;img class="logo-retina" src="logo.png" alt="logo" />
+            &lt;/a>
+        &lt;/div>
+        &lt;i class="menu-btn">&lt;/i>
+        &lt;div class="menu-cnt">
+            &lt;ul>
+                &lt;li>
+                    &lt;a href="#">Menu item&lt;/a>
+                &lt;/li>
+                &lt;li>
+                    &lt;a href="#">Menu item&lt;/a>
+                &lt;/li>
+                &lt;li>
+                    &lt;a href="#">Menu item&lt;/a>
+                &lt;/li>
+            &lt;/ul>
+            &lt;div class="menu-right">
+
+            &lt;/div>
+            &lt;div class="clear">&lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/nav>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;nav class="menu-icon" data-menu-anima="fade-in">
+    &lt;div class="container">
+        &lt;div class="menu-brand">
+            &lt;a href="#">
+                &lt;img class="logo-default" src="logo.png" alt="logo" />
+                &lt;img class="logo-retina" src="logo.png" alt="logo" />
+            &lt;/a>
+        &lt;/div>
+        &lt;i class="menu-btn">&lt;/i>
+        &lt;div class="menu-cnt">
+            &lt;ul>
+                &lt;li>
+                    &lt;a href="#">&lt;i class="im-paper-plane">&lt;/i>Menu item&lt;/a>
+                &lt;/li>
+                &lt;li class="dropdown">
+                    &lt;a href="#">&lt;i class="im-paper-plane">&lt;/i>Menu item&lt;/a>
+                    &lt;ul>
+                        &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                        &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                        &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                    &lt;/ul>
+                &lt;/li>
+                &lt;li>
+                    &lt;a href="#">&lt;i class="im-paper-plane">&lt;/i>Menu item&lt;/a>
+                &lt;/li>
+            &lt;/ul>
+            &lt;div class="menu-right">
+
+            &lt;/div>
+            &lt;div class="clear">&lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/nav> 
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;nav class="menu-subline">
+    &lt;div class="container">
+        &lt;div class="menu-brand">
+            &lt;a href="#">
+                &lt;img class="logo-default" src="logo.png" alt="logo" />
+                &lt;img class="logo-retina" src="logo.png" alt="logo" />
+            &lt;/a>
+        &lt;/div>
+        &lt;i class="menu-btn">&lt;/i>
+        &lt;div class="menu-cnt">
+            &lt;ul>
+                &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+            &lt;/ul>
+            &lt;div class="menu-right">
+               
+            &lt;/div>
+            &lt;div class="clear">&lt;/div>
+        &lt;/div>
+        &lt;div class="subline-bar">
+            &lt;div class="container">
+                &lt;ul>&lt;/ul>
+                &lt;ul>
+                    &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                    &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                    &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                &lt;/ul>
+                &lt;ul>
+                    &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                    &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                    &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                &lt;/ul>
+                &lt;ul>
+                    &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                    &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                    &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                &lt;/ul>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/nav> 
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;nav class="menu-subtitle" data-menu-anima="fade-in">
+    &lt;div class="container">
+        &lt;div class="menu-brand">
+            &lt;a href="#">
+                &lt;img class="logo-default" src="logo.png" alt="logo" />
+                &lt;img class="logo-retina" src="logo.png" alt="logo" />
+            &lt;/a>
+        &lt;/div>
+        &lt;i class="menu-btn">&lt;/i>
+        &lt;div class="menu-cnt">
+            &lt;ul>
+                &lt;li>
+                    &lt;a href="#">Menu item&lt;span>Subtitle&lt;/span>&lt;/a>
+                &lt;/li>
+                &lt;li>
+                    &lt;a href="#">Menu item&lt;span>Subtitle&lt;/span>&lt;/a>
+                &lt;/li>
+                &lt;li>
+                    &lt;a href="#">Menu item&lt;span>Subtitle&lt;/span>&lt;/a>
+                &lt;/li>
+            &lt;/ul>
+            &lt;div class="menu-right">
+
+            &lt;/div>
+            &lt;div class="clear">&lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/nav> 
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;nav class="menu-bg-box" data-menu-anima="fade-in">
+    &lt;div class="container">
+        &lt;div class="menu-brand">
+            &lt;a href="#">
+                &lt;img class="logo-default" src="logo.png" alt="logo" />
+                &lt;img class="logo-retina" src="logo.png" alt="logo" />
+            &lt;/a>
+        &lt;/div>
+        &lt;i class="menu-btn">&lt;/i>
+        &lt;div class="menu-cnt">
+            &lt;ul>
+                &lt;li>
+                    &lt;a href="#">Menu item&lt;/a>
+                &lt;/li>
+                &lt;li>
+                    &lt;a href="#">Menu item&lt;/a>
+                &lt;/li>
+                &lt;li>
+                    &lt;a href="#">Menu item&lt;/a>
+                &lt;/li>
+            &lt;/ul>
+            &lt;div class="menu-right">
+
+            &lt;/div>
+            &lt;div class="clear">&lt;/div>
+        &lt;/div>
+        &lt;div class="menu-box">
+            &lt;div class="row">
+                &lt;div class="col-lg-4">
+                    &lt;div class="icon-box icon-box-left">
+                        &lt;i class="im-phone">&lt;/i>
+                        &lt;div class="caption">
+                            &lt;h3 class="text-sm">1-700-(568-852)&lt;/h3>
+                            &lt;p class="text-xs">We're on call 24/7&lt;/p>
+                        &lt;/div>
+                    &lt;/div>
+                &lt;/div>
+                &lt;div class="col-lg-4">
+                    &lt;div class="icon-box icon-box-left">
+                        &lt;i class="im-clock">&lt;/i>
+                        &lt;div class="caption">
+                            &lt;h3 class="text-sm">Mon - Fri 08:00 - 20:00&lt;/h3>
+                            &lt;p class="text-xs">Operating Hours&lt;/p>
+                        &lt;/div>
+                    &lt;/div>
+                &lt;/div>
+                &lt;div class="col-lg-4">
+                    &lt;div class="icon-box icon-box-left">
+                        &lt;i class="im-envelope">&lt;/i>
+                        &lt;div class="caption">
+                            &lt;h3 class="text-sm">example@company.com&lt;/h3>
+                            &lt;p class="text-xs">Write to Us&lt;/p>
+                        &lt;/div>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/nav> 
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;nav class="menu-side">
+    &lt;div class="menu-brand">
+        &lt;a href="#">
+            &lt;img class="logo-default" src="logo.png" alt="logo" />
+            &lt;img class="logo-retina" src="logo.png" alt="logo" />
+        &lt;/a>
+    &lt;/div>
+    &lt;i class="menu-btn">&lt;/i>
+    &lt;div class="menu-cnt">
+        &lt;ul>
+            &lt;li>
+                &lt;a href="#">Menu item&lt;/a>
+            &lt;/li>
+            &lt;li>
+                &lt;a href="#">Menu item&lt;/a>
+            &lt;/li>
+            &lt;li>
+                &lt;a href="#">Menu item&lt;/a>
+            &lt;/li>
+        &lt;/ul>
+    &lt;/div>
+    &lt;div class="bottom-area">
+        &lt;div class="lan-menu">
+            &lt;a href="#">
+                &lt;img src="image.jpg" />
+            &lt;/a>
+            &lt;a href="#">
+                &lt;img src="image.jpg" />
+            &lt;/a>
+        &lt;/div>
+        &lt;div class="icon-links icon-social social-colors-hover align-center">
+            &lt;a target="_blank" class="facebook" href="#">&lt;i class="icon-facebook">&lt;/i>&lt;/a>
+            &lt;a target="_blank" class="twitter" href="#">&lt;i class="icon-twitter">&lt;/i>&lt;/a>
+            &lt;a target="_blank" class="linkedin" href="#">&lt;i class="icon-linkedin">&lt;/i>&lt;/a>
+        &lt;/div>
+        &lt;p>© Copyright 2018. All rights reserved. &lt;/p>
+    &lt;/div>
+&lt;/nav> 
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;nav class="menu-classic" data-menu-anima="fade-in">
+    &lt;div class="menu-mini scroll-hide">
+        &lt;div class="container">
+            &lt;ul>
+                &lt;li>&lt;i class="im-phone">&lt;/i> (02) 1234556789&lt;/li>
+                &lt;li>&lt;i class="im-envelope">&lt;/i> example@company.com&lt;/li>
+            &lt;/ul>
+            &lt;div class="menu-right">
+                &lt;form role="search" method="get" id="searchform" class="search-bar">
+                    &lt;input type="text" class="form-control" placeholder="Search for...">
+                    &lt;input type="submit" value="Go">
+                &lt;/form>
+                &lt;!--SOCIAL ICONS-->
+                &lt;div class="icon-links icon-social social-colors-hover">
+                    &lt;a target="_blank" class="facebook" href="#">&lt;i class="icon-facebook">&lt;/i>&lt;/a>
+                    &lt;a target="_blank" class="twitter" href="#">&lt;i class="icon-twitter">&lt;/i>&lt;/a>
+                    &lt;a target="_blank" class="linkedin" href="#">&lt;i class="icon-linkedin">&lt;/i>&lt;/a>
+                &lt;/div>
+                &lt;!--LAN MEMU-->
+                &lt;ul class="lan-menu">
+                    &lt;li class="dropdown">
+                        &lt;a href="#">&lt;img src="image.jpg" />EN &lt;/a>
+                        &lt;ul>
+                            &lt;li>&lt;a href="#">&lt;img src="image.jpg" />IT&lt;/a>&lt;/li>
+                        &lt;/ul>
+                    &lt;/li>
+                &lt;/ul>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+    &lt;!--MAIN MENU -->
+    &lt;div class="container">
+
+    &lt;/div>
+&lt;/nav>
+</pre>
+                    </div>
+                    <ul class="nav tab-nav">
+                        <li class="active"><a href="#">Complete menu</a></li>
+                        <li><a href="#">Classic</a></li>
+                        <li><a href="#">Top logo</a></li>
+                        <li><a href="#">Icon</a></li>
+                        <li><a href="#">Subline</a></li>
+                        <li><a href="#">Subtitle</a></li>
+                        <li><a href="#">Big box</a></li>
+                        <li><a href="#">Side</a></li>
+                        <li><a href="#">Top mini area</a></li>
+                    </ul>
+                </div>
+                <hr class="space" />
+                <h4 id="settings" class="doc-subtitle">Settings</h4>
+                <table class="table table-full-border doc-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Animations</td>
+                            <td>Attribute</td>
+                            <td>
+                                Add the attribute <code>data-menu-anima="animation-name"</code> to the menu.
+                                For the animations list and for more details visit the <a href="components/animations.html" class="btn-text">animations</a> page.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Menu height</td>
+                            <td>CSS</td>
+                            <td>
+                                To set the menu height use this CSS:
+                                <pre class="prettyprint doc-code">
+.menu-cnt > ul > li > a,body > nav .menu-brand,.menu-right,body > nav:not(.menu-fixed) > .container {
+    height: 123px;
+    line-height: 123px;
+}
+</pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Menu code location</td>
+                            <td>Information</td>
+                            <td>
+                                The menu code must be placed inside the body on top, underneath the loader.
+                                For more details about the page structure visit the start here page.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Update on scroll</td>
+                            <td>CSS</td>
+                            <td>
+                                <ul class="icon-list icon-line">
+                                    <li>Add the class <code>scroll-hide</code> to any item to hide it on page scroll.</li>
+                                    <li>Add the class <code>scroll-show</code> to any item to show it only on page scroll.</li>
+                                    <li>Add the class <code>scroll-change</code> to any item to apply the class <code>scroll-css</code> to it only on page scroll.</li>
+                                </ul>
+                                <hr class="space-xs" />
+                                For more details visit the <a href="js.html" class="btn-text">javascript</a> page.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Transparent</td>
+                            <td>CSS</td>
+                            <td>
+                                Add the class <code>menu-transparent</code> to the menu to make it transparent. Add the class <code>light</code> to make all colors white, usueful with dark backgrounds.
+                                You can convert any menu to the transparent version by add classes <code>bg-transparent</code>, <code>menu-transparent</code> to header object.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Full width</td>
+                            <td>CSS</td>
+                            <td>
+                                Add the class <code>menu-wide</code> to the menu to make it full width.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Right alignment</td>
+                            <td>CSS</td>
+                            <td>
+                                Add the class <code>align-right</code> to the menu to align it to the right.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Fixed top</td>
+                            <td>CSS</td>
+                            <td>
+                                Add the class <code>menu-fixed</code> to the menu to maintain the menu always visible on top.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Active item</td>
+                            <td>CSS</td>
+                            <td>
+                                Add class <code>active</code> to the menu item you want to show as active.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>One page</td>
+                            <td>--</td>
+                            <td>
+                                <ul class="icon-list icon-line">
+                                    <li>Add the class <code>menu-one-page</code> to the menu.</li>
+                                    <li>Set the <code>href="#ID"</code> attribute of each menu link with the ID of the area you want to link the item to.</li>
+                                    <li>Add the attribute <code>data-scroll-detect="true"</code> to the menu to update the active menu item automatically on page scroll.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Icons list</td>
+                            <td>Information</td>
+                            <td>
+                                <a class="btn-text" href="http://fontawesome.io/icons/" target="_blank">Font Awesome</a><span class="space-xs"></span>
+                                <a class="btn-text" href="http://www.html.framework-y.com/themekit/scripts/iconsmind/docs/" target="_blank">Icons Mind</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Big box content</td>
+                            <td>Information</td>
+                            <td>
+                                The menu big box type's big area accept any content, usually it contain some colum and inside them the icon box component.
+                                For more details visit the <a href="css.html" class="btn-text">css</a> page and the <a href="components/icons.html" class="btn-text">icons</a> page.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Side collapse</td>
+                            <td>Information</td>
+                            <td>
+                                Add the class <code>menu-side-collapse</code> to the side menu to make it collapsable.
+                                This feature require the installation of the scroll box plugin:<br />
+<pre class="prettyprint doc-code">
+&lt;script src='themekit/scripts/slimscroll.min.js'&gt;&lt;/script&gt; 
+</pre>
+                                For more details visit the <a href="containers/scroll-box.html" class="btn-text">scroll box</a> page.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr class="space" />
+                <h4 id="dropdown" class="doc-subtitle">Dropdown</h4>
+                <div class="doc-tab tab-box tab-inverse" data-tab-anima="fade-in">
+                    <div class="panel active">
+<pre class="prettyprint doc-code">
+&lt;li>
+    &lt;a href="#">Menu item&lt;/a>
+&lt;/li>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;li class="dropdown">
+    &lt;a href="#">Menu item&lt;/a>
+    &lt;div class="mega-menu">
+        &lt;div class="col">
+            &lt;ul class="icon-list">
+                &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+            &lt;/ul>
+        &lt;/div>
+    &lt;/div>
+&lt;/li> 
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;li class="mega-dropdown">
+    &lt;a href="#">Menu item&lt;/a>
+    &lt;div class="mega-menu">
+        &lt;div class="col">
+            &lt;h5>Header&lt;/h5>
+            &lt;ul class="icon-list">
+                &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+            &lt;/ul>
+        &lt;/div>
+        &lt;div class="col">
+            &lt;h5>Header&lt;/h5>
+            &lt;ul class="icon-list">
+                &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+            &lt;/ul>
+        &lt;/div>
+        &lt;div class="col">
+            &lt;h5>Header&lt;/h5>
+            &lt;ul class="icon-list">
+                &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+            &lt;/ul>
+            &lt;h5>Header&lt;/h5>
+            &lt;ul class="icon-list">
+                &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+            &lt;/ul>
+        &lt;/div>
+    &lt;/div>
+&lt;/li>  
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;li class="mega-dropdown mega-tabs">
+    &lt;a href="#">Tabs mega dropdown&lt;/a>
+    &lt;div class="mega-menu">
+        &lt;div class="tab-box" data-tab-anima="fade-in">
+            &lt;ul class="tab-nav">
+                &lt;li class="active">&lt;a href="#">Tab name&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#">Tab name&lt;/a>&lt;/li>
+            &lt;/ul>
+            &lt;div class="panel active">
+                &lt;div class="col">
+                    &lt;h5>Header&lt;/h5>
+                    &lt;ul class="icon-list">
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                    &lt;/ul>
+                &lt;/div>
+                &lt;div class="col">
+                    &lt;h5>Header&lt;/h5>
+                    &lt;ul class="icon-list">
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                    &lt;/ul>
+                &lt;/div>
+                &lt;div class="col">
+                    &lt;h5>Header&lt;/h5>
+                    &lt;ul class="icon-list">
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                    &lt;/ul>
+                    &lt;h5>Header&lt;/h5>
+                    &lt;ul class="icon-list">
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                    &lt;/ul>
+                &lt;/div>
+            &lt;/div>
+            &lt;div class="panel">
+                &lt;div class="col">
+                    &lt;h5>Header&lt;/h5>
+                    &lt;ul class="icon-list">
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                    &lt;/ul>
+                &lt;/div>
+                &lt;div class="col">
+                    &lt;h5>Header&lt;/h5>
+                    &lt;ul class="icon-list">
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                    &lt;/ul>
+                &lt;/div>
+                &lt;div class="col">
+                    &lt;h5>Header&lt;/h5>
+                    &lt;ul class="icon-list">
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                    &lt;/ul>
+                &lt;/div>
+                &lt;div class="col">
+                    &lt;h5>Header&lt;/h5>
+                    &lt;ul class="icon-list">
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                        &lt;li>&lt;i class="im-paper-plane">&lt;/i> &lt;a href="#">Menu item&lt;/a>&lt;/li>
+                    &lt;/ul>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/li> 
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;li class="dropdown">
+    &lt;a href="#">Dropdown&lt;/a>
+    &lt;ul>
+        &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+    &lt;/ul>
+&lt;/li> 
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;li class="dropdown">
+    &lt;a href="#">Dropdown multi level&lt;/a>
+    &lt;ul>
+        &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+        &lt;li class="dropdown-submenu">
+            &lt;a>Dropdown&lt;/a>
+            &lt;ul>
+                &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                &lt;li class="dropdown-submenu">
+                    &lt;a href="#">Dropdown&lt;/a>
+                    &lt;ul>
+                        &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                        &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                        &lt;li>&lt;a href="#">Menu item&lt;/a>&lt;/li>
+                    &lt;/ul>
+                &lt;/li>
+            &lt;/ul>
+        &lt;/li>
+    &lt;/ul>
+&lt;/li> 
+</pre>
+                    </div>
+                    <ul class="nav tab-nav">
+                        <li class="active"><a href="#">Single item</a></li>
+                        <li><a href="#">Icon list</a></li>
+                        <li><a href="#">Icon list mega</a></li>
+                        <li><a href="#">Tabs</a></li>
+                        <li><a href="#">Dropdown</a></li>
+                        <li><a href="#">Dropdown multi level</a></li>
+                    </ul>
+                </div>
+                <hr class="space-sm" />
+                <table class="table table-full-border doc-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Code location</td>
+                            <td>Information</td>
+                            <td>
+                                Insert the code snippets above into the <code>&lt;div class="menu-cnt">&lt;ul>   &lt;/ul>&lt;/div></code> code block of the menu.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mega menu image</td>
+                            <td>CSS</td>
+                            <td>
+                                Add the css style <code>background-image:url(image.jpg)</code> to the <code>&lt;div class="mega-menu">&lt;/div></code> code block to set a background image.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tabs</td>
+                            <td>Information</td>
+                            <td>
+                                The tabs type require the installation of the tabs plugin:<br />
+<pre class="prettyprint doc-code">
+&lt;script src='themekit/scripts/tab-accordion.js'&gt;&lt;/script&gt; 
+</pre>
+                                For more details visit the <a href="containers/tab.html" class="btn-text">tabs</a> page.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Icons list</td>
+                            <td>Information</td>
+                            <td>
+                                <a class="btn-text" href="http://fontawesome.io/icons/" target="_blank">Font Awesome</a><span class="space-xs"></span>
+                                <a class="btn-text" href="http://www.html.framework-y.com/themekit/scripts/iconsmind/docs/" target="_blank">Icons Mind</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr class="space-sm" />
+                <a href="dropdown/" target="_blank" class="btn-xs btn">Dropdown types preview</a>
+                <hr class="space" />
+                <h4 id="components" class="doc-subtitle">Components</h4>
+                <div class="doc-tab tab-box tab-inverse" data-tab-anima="fade-in">
+                    <div class="panel active">
+<pre class="prettyprint doc-code">
+&lt;form role="search" method="get" id="searchform" class="search-bar">
+    &lt;input type="text" class="form-control" placeholder="Search ...">
+    &lt;input type="submit" value="Go">
+&lt;/form> 
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;form role="search" method="get" id="searchform" class="search-btn">
+    &lt;div class="search-box-menu">
+        &lt;input type="text" placeholder="Search ...">
+        &lt;i>&lt;/i>
+    &lt;/div>
+&lt;/form> 
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="icon-links icon-social social-colors-hover">
+    &lt;a target="_blank" class="facebook" href="#">&lt;i class="icon-facebook">&lt;/i>&lt;/a>
+    &lt;a target="_blank" class="twitter" href="#">&lt;i class="icon-twitter">&lt;/i>&lt;/a>
+    &lt;a target="_blank" class="linkedin" href="#">&lt;i class="icon-linkedin">&lt;/i>&lt;/a>
+&lt;/div> 
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="shop-menu-cnt shop-menu-empty">
+    &lt;i>&lt;span class="cart-count">0&lt;/span>&lt;/i>
+    &lt;div class="shop-menu">
+        &lt;ul class="shop-cart">
+            &lt;li class="cart-item">
+                &lt;img src="image.jpg">
+                &lt;div class="cart-content">
+                    &lt;h5>Product 1&lt;/h5>
+                    &lt;span class="cart-quantity">
+                        1 x $99.00
+                    &lt;/span>
+                &lt;/div>
+            &lt;/li>
+            &lt;li class="cart-item">
+                &lt;img src="image.jpg">
+                &lt;div class="cart-content">
+                    &lt;h5>Product 2&lt;/h5>
+                    &lt;span class="cart-quantity">
+                        1 x $99.00
+                    &lt;/span>
+                &lt;/div>
+            &lt;/li>
+        &lt;/ul>
+        &lt;p class="cart-total">
+            Subtotal: &lt;span>$299.00&lt;/span>
+        &lt;/p>
+        &lt;p class="cart-buttons">
+            &lt;a href="#" class="cart-view">View Cart&lt;/a>
+            &lt;a href="#" class="cart-checkout">Checkout&lt;/a>
+        &lt;/p>
+    &lt;/div>
+&lt;/div> 
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;ul class="lan-menu">
+    &lt;li class="dropdown">
+        &lt;a href="#">&lt;img src="flag.jpg" />EN &lt;/a>
+        &lt;ul>
+            &lt;li>&lt;a href="#">&lt;img src="flag.jpg" />IT&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">&lt;img src="flag.jpg" />ES&lt;/a>&lt;/li>
+        &lt;/ul>
+    &lt;/li>
+&lt;/ul> 
+</pre>
+                    </div>
+                    <ul class="nav tab-nav">
+                        <li class="active"><a href="#">Search bar</a></li>
+                        <li><a href="#">Search button</a></li>
+                        <li><a href="#">Social icons</a></li>
+                        <li><a href="#">Shopping cart</a></li>
+                        <li><a href="#">Language menu</a></li>
+                    </ul>
+                </div>
+                <hr class="space-sm" />
+                <table class="table table-full-border doc-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Code location</td>
+                            <td>Information</td>
+                            <td>
+                                Insert the code snippets above into the <code>&lt;div class="menu-right">  &lt;/div></code> code block of the menu or mini area.
+                                The side menu is not compatible with some component.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Social icons</td>
+                            <td>Information</td>
+                            <td>
+                                For more details and for the icons list visit the <a href="components/social.html" class="btn-text">social</a> page.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Shopping cart empty</td>
+                            <td>CSS</td>
+                            <td>
+                                Add the class <code>shop-menu-empty</code> to the shopping cart component if it's empty.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container"></div>
+        <div class="footer-bar">
+            <div class="container">
+                &copy; 2019. All rights reserved.
+                Designed and built with passion and hard work by the <a href="https://schiocco.com" target="_blank">schiocco.com</a> team.
+            </div>
+        </div>
+        <link rel="stylesheet" href="themekit/media/icons/iconsmind/line-icons.min.css">
+        <script src="themekit/scripts/slimscroll.min.js"></script>
+        <script src="themekit/scripts/prettify.js"></script>
+        <script src="themekit/scripts/tab-accordion.js"></script>
+        <script src="custom/custom.js"></script>
+    </footer>
+</body>
+</html>

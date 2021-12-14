@@ -1,0 +1,687 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS | Docs | Themekit</title>
+    <meta name="description" content="Themekit menu main documentation.">
+    <script src="themekit/scripts/jquery.min.js"></script>
+    <script src="themekit/scripts/main.js"></script>
+    <link rel="stylesheet" href="themekit/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="themekit/css/style.css">
+    <link rel="stylesheet" href="skin.css">
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body class="menu-side-cnt">
+    <div id="preloader"></div>
+    <nav class="menu-classic menu-fixed menu-wide doc-main-menu scroll-change" data-menu-anima="fade-in">
+        <div class="container">
+            <div class="menu-brand">
+                <a href="https://themekit.dev/">
+                    <img class="logo-default" src="images/logo.svg" alt="logo" />
+                    <img class="logo-retina" src="images/logo.svg" alt="logo" />
+                </a>
+            </div>
+        </div>
+    </nav>
+    <nav class="menu-side menu-side-collapse doc-menu scroll-change">
+        <i class="menu-btn"></i>
+        <div class="menu-cnt">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Getting started</a>
+                    <ul>
+                        <li><a href="#">Start here</a></li>
+                        <li><a href="css.html">Global CSS</a></li>
+                        <li><a href="js.html">Global JS</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Components</a>
+                    <ul>
+                        <li><a href="components/animations.html">Animations</a></li>
+                        <li><a href="components/buttons.html">Buttons and inputs</a></li>
+                        <li><a href="components/contact-form.html">Contact form</a></li>
+                        <li><a href="components/content-box.html">Content box</a></li>
+                        <li><a href="components/countdown.html">Countdown</a></li>
+                        <li><a href="components/counter.html">Counter</a></li>
+                        <li><a href="components/icons.html">Icons</a></li>
+                        <li><a href="components/image-box.html">Image box</a></li>
+                        <li><a href="components/inner-menu.html">Inner menu</a></li>
+                        <li><a href="components/lists.html">Lists</a></li>
+                        <li><a href="components/map.html">Map</a></li>
+                        <li><a href="components/media-box.html">Media box</a></li>
+                        <li><a href="components/progress-bar.html">Progress bar</a></li>
+                        <li><a href="components/social.html">Social</a></li>
+                        <li><a href="components/table.html">Table</a></li>
+                        <li><a href="components/timeline.html">Timeline</a></li>
+                        <li><a href="components/typography.html">Typography</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Containers</a>
+                    <ul>
+                        <li><a href="containers/accordion.html">Accordion</a></li>
+                        <li><a href="containers/album.html">Album</a></li>
+                        <li><a href="containers/collapse.html">Collapse</a></li>
+                        <li><a href="containers/fixed-area.html">Fixed area</a></li>
+                        <li><a href="containers/grid.html">Grid</a></li>
+                        <li><a href="containers/lightbox.html">Lightbox</a></li>
+                        <li><a href="containers/masonry.html">Masonry</a></li>
+                        <li><a href="containers/scroll-box.html">Scroll box</a></li>
+                        <li><a href="containers/slider.html">Slider</a></li>
+                        <li><a href="containers/steps.html">Steps</a></li>
+                        <li><a href="containers/tab.html">Tab</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Sections</a>
+                    <ul>
+                        <li><a href="sections/base.html">Base</a></li>
+                        <li><a href="sections/image.html">Image</a></li>
+                        <li><a href="sections/slider.html">Slider</a></li>
+                        <li><a href="sections/video.html">Video</a></li>
+                        <li><a href="sections/block.html">Block</a></li>
+                        <li><a href="sections/map.html">Map</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Headers</a>
+                    <ul>
+                        <li><a href="headers/image.html">Image</a></li>
+                        <li><a href="headers/slider.html">Image slider</a></li>
+                        <li><a href="headers/video.html">Video</a></li>
+                        <li><a href="headers/base.html">Base</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="navs.html">Navigation</a>
+                </li>
+                <li>
+                    <a href="footer.html">Footer</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header id="header" class="header-base doc-title scroll-hide">
+        <div class="container">
+            <h1>CSS</h1>
+            <div class="menu-inner">
+                <div><i class="menu-btn"></i><span>Menu</span></div>
+                <ul>
+                    <li class="active"><a href="#global">Global css</a></li>
+                    <li><a href="#grid">Grid system</a></li>
+                    <li><a href="#responsive">Responsive</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-base">
+            <div class="container">
+                <h4 id="global" class="doc-subtitle">Global CSS</h4>
+                <table class="table table-full-border doc-table doc-table-css">
+                    <thead>
+                        <tr>
+                            <th>Class name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>light</code></td>
+                            <td>
+                                Add the class to any component to convert to white all the colors of the content inside it. Useful with dark backgrounds.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>text-uppercase</code></td>
+                            <td>
+                                Convert all texts to uppercase.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>boxed-area</code></td>
+                            <td>
+                                Add the class to a <code>&lt;div> &lt;/div></code> element to convert apply padding and white background.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="table doc-table-80">
+                                    <tbody>
+                                        <tr>
+                                            <td><code>align-left</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>align-center</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>align-right</code></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td>
+                                <table class="table doc-table-80">
+                                    <tbody>
+                                        <tr>
+                                            <td>Global class to align the contents to left.</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Global class to align the contents to center.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Global class to align the contents to right.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="table doc-table-80">
+                                    <tbody>
+                                        <tr>
+                                            <td><code>text-xs</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>text-sm</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>text-md</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>text-lg</code></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td>
+                                <table class="table doc-table-80">
+                                    <tbody>
+                                        <tr>
+                                            <td>Extra small 12px text size.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Small 16px text size.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Medium 25px text size.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Large 50px text size.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="table doc-table-80">
+                                    <tbody>
+                                        <tr>
+                                            <td><code>text-light</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>text-normal</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>text-bold</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>text-black</code></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td>
+                                <table class="table doc-table-80">
+                                    <tbody>
+                                        <tr>
+                                            <td>Set the font weight to light (100).</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Set the font weight to normal (400).</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Set the font weight to bold (600).</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Set the font weight to extra bold (900).</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="table doc-table-80">
+                                    <tbody>
+                                        <tr>
+                                            <td><code>space-xs</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>space-sm</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>space</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>space-md</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>space-lg</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code></code></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td>
+                                <table class="table doc-table-80">
+                                    <tbody>
+                                        <tr>
+                                            <td>Extra small 15px space.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Small 30px space.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Default 60px space.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Medium 75px space.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Large 100px space.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Use this class with the <code>&lt;hr class="" /></code> element for vertical spacing and with the <code>&lt;span class="">&lt;/span></code> element for horizontal spacing.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr class="space" />
+                <h4 id="grid" class="doc-subtitle">Grid system</h4>
+                <div class="doc-tab doc-grid-tab tab-box tab-inverse" data-tab-anima="fade-in">
+                    <div class="panel active">
+                        <div class="row doc-grid">
+                            <div class="col-lg-6">
+                                <div>col-lg-6</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div>col-lg-6</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="row doc-grid">
+                            <div class="col-lg-4">
+                                <div>col-lg-4</div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div>col-lg-4</div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div>col-lg-4</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="row doc-grid">
+                            <div class="col-lg-3">
+                                <div>col-lg-3</div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div>col-lg-3</div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div>col-lg-3</div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div>col-lg-3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="row doc-grid">
+                            <div class="col-lg-2">
+                                <div>col-lg-2</div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div>col-lg-2</div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div>col-lg-2</div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div>col-lg-2</div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div>col-lg-2</div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div>col-lg-2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="row doc-grid">
+                            <div class="col-lg-4">
+                                <div>col-lg-4</div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div>col-lg-8</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="row doc-grid">
+                            <div class="col-lg-4">
+                                <div>col-lg-4</div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div>col-lg-5</div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div>col-lg-3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="row doc-grid justify-content-center">
+                            <div class="col-lg-6">
+                                <div>col-lg-6</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="row doc-grid align-items-center">
+                            <div class="col-lg-4">
+                                <div style="height:50px; line-height: 50px;">col-lg-4</div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div>col-lg-4</div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div style="height:70px;line-height: 70px;">col-lg-4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="space-sm" />
+                <div class="doc-tab tab-box tab-inverse" data-tab-anima="fade-in">
+                    <div class="panel active">
+<pre class="prettyprint doc-code">
+&lt;div class="row">
+    &lt;div class="col-lg-6">
+
+    &lt;/div>
+    &lt;div class="col-lg-6">
+
+    &lt;/div>
+&lt;/div> 
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="row">
+    &lt;div class="col-lg-4">
+
+    &lt;/div>
+    &lt;div class="col-lg-4">
+
+    &lt;/div>
+    &lt;div class="col-lg-4">
+
+    &lt;/div>
+&lt;/div>  
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="row">
+    &lt;div class="col-lg-3">
+        
+    &lt;/div>
+    &lt;div class="col-lg-3">
+       
+    &lt;/div>
+    &lt;div class="col-lg-3">
+      
+    &lt;/div>
+    &lt;div class="col-lg-3">
+      
+    &lt;/div>
+&lt;/div>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="row">
+    &lt;div class="col-lg-2">
+
+    &lt;/div>
+    &lt;div class="col-lg-2">
+
+    &lt;/div>
+    &lt;div class="col-lg-2">
+
+    &lt;/div>
+    &lt;div class="col-lg-2">
+
+    &lt;/div>
+    &lt;div class="col-lg-2">
+
+    &lt;/div>
+    &lt;div class="col-lg-2">
+
+    &lt;/div>
+&lt;/div>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="row">
+    &lt;div class="col-lg-4">
+
+    &lt;/div>
+    &lt;div class="col-lg-8">
+
+    &lt;/div>
+&lt;/div>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="row">
+    &lt;div class="col-lg-4">
+
+    &lt;/div>
+    &lt;div class="col-lg-5">
+
+    &lt;/div>
+    &lt;div class="col-lg-3">
+
+    &lt;/div>
+&lt;/div>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="row justify-content-center">
+    &lt;div class="col-lg-6">
+
+    &lt;/div>
+&lt;/div>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="row align-items-center">
+    &lt;div class="col-lg-4">
+        
+    &lt;/div>
+    &lt;div class="col-lg-4">
+  
+    &lt;/div>
+    &lt;div class="col-lg-4">
+ 
+    &lt;/div>
+&lt;/div>
+</pre>
+                    </div>
+                    <ul class="nav tab-nav">
+                        <li class="active"><a onclick="showPanel(0)" href="#">2 columns</a></li>
+                        <li><a onclick="showPanel(1)" href="#">3 columns</a></li>
+                        <li><a onclick="showPanel(2)" href="#">4 columns</a></li>
+                        <li><a onclick="showPanel(3)" href="#">6 columns</a></li>
+                        <li><a onclick="showPanel(4)" href="#">Mixed 1</a></li>
+                        <li><a onclick="showPanel(5)" href="#">Mixed 2</a></li>
+                        <li><a onclick="showPanel(6)" href="#">Centered</a></li>
+                        <li><a onclick="showPanel(7)" href="#">Vertical centered</a></li>
+                    </ul>
+                </div>
+                <hr class="space-sm" />
+                <table class="table table-full-border doc-table doc-table-css">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Centered</td>
+                            <td>Add the class <code>justify-content-center</code> to align the columns to center.</td>
+                        </tr>
+                        <tr>
+                            <td>Horizontal centered</td>
+                            <td>Add the class <code>align-items-center</code> to center horizontally the columns.</td>
+                        </tr>
+                        <tr>
+                            <td>Responsive</td>
+                            <td>Add the class <code>col-md-*</code> to set the column width for medium screens (< 992px) and the class <code>col-sm-*</code> to set the column width on small screens (< 768px).</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr class="space-sm" />
+                <a href="https://getbootstrap.com/docs/4.0/layout/grid/" target="_blank" class="btn btn-xs">Grid system documentation</a>
+                <hr class="space" />
+                <h4 id="responsive" class="doc-subtitle">Responsive CSS</h4>
+                <table class="table table-full-border doc-table">
+                    <thead>
+                        <tr>
+                            <th>Class name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>no-margin-md</code></td>
+                            <td>Remove the margins only on medium screens.</td>
+                        </tr>
+                        <tr>
+                            <td><code>no-margin-sm</code></td>
+                            <td>Remove the margins only on small screens.</td>
+                        </tr>
+                        <tr>
+                            <td><code>no-margin-xs</code></td>
+                            <td>Remove the margins only on extra small screens.</td>
+                        </tr>
+                        <tr>
+                            <td><code>full-width-md</code></td>
+                            <td>Full width only on medium screens.</td>
+                        </tr>
+                        <tr>
+                            <td><code>full-width-sm</code></td>
+                            <td>Full width only on small screens.</td>
+                        </tr>
+                        <tr>
+                            <td><code>visible-md</code></td>
+                            <td>Show the element only on medium screens.</td>
+                        </tr>
+                        <tr>
+                            <td><code>visible-sm</code></td>
+                            <td>Show the element only on small screens.</td>
+                        </tr>
+                        <tr>
+                            <td><code>visible-xs</code></td>
+                            <td>Show the element only on extra small screens.</td>
+                        </tr>
+                        <tr>
+                            <td><code>hidden-md</code></td>
+                            <td>Hide the element only on medium screens.</td>
+                        </tr>
+                        <tr>
+                            <td><code>hidden-sm</code></td>
+                            <td>Hide the element only on small screens.</td>
+                        </tr>
+                        <tr>
+                            <td><code>hidden-xs</code></td>
+                            <td>Hide the element only on extra small screens.</td>
+                        </tr>
+                        <tr>
+                            <td><code>hidden-xs</code></td>
+                            <td>Hide the element only on extra small screens.</td>
+                        </tr>
+                        <tr>
+                            <td><code>align-left-md</code></td>
+                            <td>Left alignment only on medium screens.</td>
+                        </tr>
+                        <tr>
+                            <td><code>align-left-sm</code></td>
+                            <td>Left alignment only on small screens.</td>
+                        </tr>
+                        <tr>
+                            <td><code>align-right-md</code></td>
+                            <td>Right alignment only on medium screens.</td>
+                        </tr>
+                        <tr>
+                            <td><code>align-right-sm</code></td>
+                            <td>Right alignment only on small screens.</td>
+                        </tr>
+                        <tr>
+                            <td><code>align-center-md</code></td>
+                            <td>Center alignment only on medium screens.</td>
+                        </tr>
+                        <tr>
+                            <td><code>align-center-sm</code></td>
+                            <td>Center alignment only on small screens.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container"></div>
+        <div class="footer-bar">
+            <div class="container">
+                &copy; 2019. All rights reserved.
+                Designed and built with passion and hard work by the <a href="https://schiocco.com" target="_blank">schiocco.com</a> team.
+            </div>
+        </div>
+        <link rel="stylesheet" href="themekit/media/icons/iconsmind/line-icons.min.css">
+        <link rel="stylesheet" href="themekit/css/prettify.css">
+        <script src="themekit/scripts/slimscroll.min.js"></script>
+        <script src="themekit/scripts/prettify.js"></script>
+        <script src="themekit/scripts/tab-accordion.js"></script>
+        <script>
+            function showPanel(index) {
+                $('.doc-grid-tab .panel').removeClass('active');
+                $('.doc-grid-tab .panel').eq(index).addClass('active');
+            }
+        </script>
+    </footer>
+</body>
+</html>

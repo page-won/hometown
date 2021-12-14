@@ -1,0 +1,464 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Animations | Components | Themekit</title>
+    <meta name="description" content="Awesome CSS and JQuery animations engine for web developers.">
+    <script src="../themekit/scripts/jquery.min.js"></script>
+    <script src="../themekit/scripts/main.js"></script>
+    <link rel="stylesheet" href="../themekit/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../themekit/css/style.css">
+    <link rel="stylesheet" href="../themekit/css/prettify.css">
+    <link rel="stylesheet" href="../skin.css">
+    <link rel="icon" href="../images/favicon.png">
+</head>
+<body class="menu-side-cnt">
+    <div id="preloader"></div>
+    <nav class="menu-classic menu-fixed menu-wide doc-main-menu scroll-change" data-menu-anima="fade-in">
+        <div class="container">
+            <div class="menu-brand">
+                <a href="https://themekit.dev/">
+                    <img class="logo-default" src="../images/logo.svg" alt="logo" />
+                    <img class="logo-retina" src="../images/logo.svg" alt="logo" />
+                </a>
+            </div>
+        </div>
+    </nav>
+    <nav class="menu-side menu-side-collapse doc-menu scroll-change">
+        <i class="menu-btn"></i>
+        <div class="menu-cnt">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Getting started</a>
+                    <ul>
+                        <li><a href="#">Start here</a></li>
+                        <li><a href="../css.html">Global CSS</a></li>
+                        <li><a href="../js.html">Global JS</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Components</a>
+                    <ul>
+                        <li><a href="../components/animations.html">Animations</a></li>
+                        <li><a href="../components/buttons.html">Buttons and inputs</a></li>
+                        <li><a href="../components/contact-form.html">Contact form</a></li>
+                        <li><a href="../components/content-box.html">Content box</a></li>
+                        <li><a href="../components/countdown.html">Countdown</a></li>
+                        <li><a href="../components/counter.html">Counter</a></li>
+                        <li><a href="../components/icons.html">Icons</a></li>
+                        <li><a href="../components/image-box.html">Image box</a></li>
+                        <li><a href="../components/inner-menu.html">Inner menu</a></li>
+                        <li><a href="../components/lists.html">Lists</a></li>
+                        <li><a href="../components/map.html">Map</a></li>
+                        <li><a href="../components/media-box.html">Media box</a></li>
+                        <li><a href="../components/progress-bar.html">Progress bar</a></li>
+                        <li><a href="../components/social.html">Social</a></li>
+                        <li><a href="../components/table.html">Table</a></li>
+                        <li><a href="../components/timeline.html">Timeline</a></li>
+                        <li><a href="../components/typography.html">Typography</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Containers</a>
+                    <ul>
+                        <li><a href="../containers/accordion.html">Accordion</a></li>
+                        <li><a href="../containers/album.html">Album</a></li>
+                        <li><a href="../containers/collapse.html">Collapse</a></li>
+                        <li><a href="../containers/fixed-area.html">Fixed area</a></li>
+                        <li><a href="../containers/grid.html">Grid</a></li>
+                        <li><a href="../containers/lightbox.html">Lightbox</a></li>
+                        <li><a href="../containers/masonry.html">Masonry</a></li>
+                        <li><a href="../containers/scroll-box.html">Scroll box</a></li>
+                        <li><a href="../containers/slider.html">Slider</a></li>
+                        <li><a href="../containers/steps.html">Steps</a></li>
+                        <li><a href="../containers/tab.html">Tab</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Sections</a>
+                    <ul>
+                        <li><a href="../sections/base.html">Base</a></li>
+                        <li><a href="../sections/image.html">Image</a></li>
+                        <li><a href="../sections/slider.html">Slider</a></li>
+                        <li><a href="../sections/video.html">Video</a></li>
+                        <li><a href="../sections/block.html">Block</a></li>
+                        <li><a href="../sections/map.html">Map</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Headers</a>
+                    <ul>
+                        <li><a href="../headers/image.html">Image</a></li>
+                        <li><a href="../headers/slider.html">Image slider</a></li>
+                        <li><a href="../headers/video.html">Video</a></li>
+                        <li><a href="../headers/base.html">Base</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../navs.html">Navigation</a>
+                </li>
+                <li>
+                    <a href="../footer.html">Footer</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header id="header" class="header-base doc-title scroll-hide">
+        <div class="container">
+            <h1>Animations</h1>
+            <div class="menu-inner">
+                <div><i class="menu-btn"></i><span>Menu</span></div>
+                <ul>
+                    <li class="active"><a href="#preview">Preview</a></li>
+                    <li><a href="#usage">Usage</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-base">
+            <div class="container">
+                <h4 id="preview" class="doc-subtitle">Preview</h4>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <p class="doc-subtitle">Base</p>
+                        <img data-anima="scale" data-time="2000" data-trigger="hover" src="../images/thumbs/wide.png" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p class="doc-subtitle">Inner target</p>
+                        <hr class="space-xs" />
+                        <div data-anima="pulse" data-trigger="hover" data-time="2000">
+                            <img class="anima" src="../images/thumbs/wide.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p class="doc-subtitle">Outer target</p>
+                        <img id="target" class="anima" src="../images/thumbs/wide-empty.png" alt="">
+                        <a class="btn btn-xs btn-border" data-anima="show-scale" data-time="2000" data-trigger="click" data-target="#target" style="position: absolute;bottom: 60px;left: 50%;transform: translateX(-50%);">
+                            Start animation
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p class="doc-subtitle">Javascript function</p>
+                        <img onmouseover="$(this).showAnima('pulse-horizontal');" data-time="2000" src="../images/thumbs/wide.png" alt="">
+                    </div>
+                </div>
+                <hr class="space" />
+                <h4 id="types" class="doc-subtitle">Animation types</h4>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <a href="#" onclick="showAnimaPreview('fade-in')" class="btn btn-xs full-width">Fade in</a>
+                        <a href="#" onclick="showAnimaPreview('fade-top');" class="btn btn-xs full-width">Fade top</a>
+                        <a href="#" onclick="showAnimaPreview('fade-right');" class="btn btn-xs full-width">Fade right</a>
+                        <a href="#" onclick="showAnimaPreview('fade-bottom');" class="btn btn-xs full-width">Fade bottom</a>
+                        <a href="#" onclick="showAnimaPreview('rotate');" class="btn btn-xs full-width">Rotate</a>
+                        <a href="#" onclick="showAnimaPreview('scale');" class="btn btn-xs full-width">Scale</a>
+                        <a href="#" onclick="showAnimaPreview('scale-rotate');" class="btn btn-xs full-width">Scale Rotate</a>
+                    </div>
+                    <div class="col-lg-3 no-margin-md">
+                        <a href="#" onclick="showAnimaPreview('show-scale');" class="btn btn-xs full-width">Show scale</a>
+                        <a href="#" onclick="showAnimaPreview('pulse');" class="btn btn-xs full-width">Pulse</a>
+                        <a href="#" onclick="showAnimaPreview('pulse-horizontal');" class="btn btn-xs full-width">Pulse Horizontal</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img id="anima-preview" class="full-width" src="../images/thumbs/hd.png" data-time="2000" style="max-height: 377px;" alt="">
+                    </div>
+                </div>
+                <hr class="space" />
+                <h4 id="triggers" class="doc-subtitle">Triggers</h4>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <p class="doc-subtitle">Scroll</p>
+                        <img data-anima="pulse" data-time="2000" src="../images/thumbs/wide.png" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p class="doc-subtitle">Load</p>
+                        <img data-anima="pulse" data-trigger="load" data-time="2000" src="../images/thumbs/wide.png" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p class="doc-subtitle">Hover</p>
+                        <img data-anima="pulse" data-trigger="hover" data-time="2000" src="../images/thumbs/wide.png" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <p class="doc-subtitle">Click</p>
+                        <img data-anima="pulse" data-trigger="click" data-time="2000" src="../images/thumbs/wide.png" alt="">
+                    </div>
+                </div>
+                <hr class="space" />
+                <h4 class="doc-subtitle">Animation groups</h4>
+                <p class="doc-subtitle">Base</p>
+                <div class="row" data-anima="fade-bottom">
+                    <div class="col-lg-3 col-md-6">
+                        <img class="anima" src="../images/thumbs/wide.png" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <img class="anima" src="../images/thumbs/wide.png" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <img class="anima" src="../images/thumbs/wide.png" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <img class="anima" src="../images/thumbs/wide.png" alt="">
+                    </div>
+                </div>
+                <hr class="space-sm" />
+                <p class="doc-subtitle">Timeline</p>
+                <div class="row" data-anima="fade-right" data-timeline="asc" data-time="2000" data-timeline-time="1000">
+                    <div class="col-lg-3 col-md-6">
+                        <img class="anima" src="../images/thumbs/wide.png" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <img class="anima" src="../images/thumbs/wide.png" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <img class="anima" src="../images/thumbs/wide.png" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <img class="anima" src="../images/thumbs/wide.png" alt="">
+                    </div>
+                </div>
+                <hr class="space-sm" />
+                <p class="doc-subtitle">Timeline - Descending order and multiple animations</p>
+                <div class="row" data-anima="fade-bottom" data-timeline="asc" data-time="2000" data-timeline-time="1000">
+                    <div class="col-lg-3 col-md-6">
+                        <img class="anima anima-fade-left" src="../images/thumbs/wide.png" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <img class="anima anima-show-scale" src="../images/thumbs/wide.png" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <img class="anima" src="../images/thumbs/wide.png" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <img class="anima anima-pulse" src="../images/thumbs/wide.png" alt="">
+                    </div>
+                </div>
+                <hr class="space" />
+                <h4 id="usage" class="doc-subtitle">Usage</h4>
+                <div class="doc-tab tab-box tab-inverse" data-tab-anima="fade-in">
+                    <div class="panel active">
+                        <div class="doc-code">
+<pre class="prettyprint">
+&lt;img data-anima="scale" data-time="2000" data-trigger="hover" src="image.jpg">
+</pre>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="doc-code">
+<pre class="prettyprint">
+&lt;div data-anima="pulse" data-trigger="hover" data-time="2000">
+    &lt;img class="anima" src="image.jpg">
+&lt;/div>
+</pre>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="doc-code">
+<pre class="prettyprint">
+&lt;div class="row" data-anima="fade-bottom" data-timeline="asc" data-time="2000" data-timeline-time="1000">
+    &lt;div class="col-lg-3">
+        &lt;img class="anima anima-fade-left" src="image.jpg">
+    &lt;/div>
+    &lt;div class="col-lg-3">
+        &lt;img class="anima anima-show-scale" src="image.jpg">
+    &lt;/div>
+    &lt;div class="col-lg-3">
+        &lt;img class="anima" src="image.jpg">
+    &lt;/div>
+    &lt;div class="col-lg-3">
+        &lt;img class="anima anima-pulse" src="image.jpg">
+    &lt;/div>
+&lt;/div>
+</pre>
+                        </div>
+                    </div>
+                    <ul class="nav tab-nav">
+                        <li class="active"><a href="#">Base</a></li>
+                        <li><a href="#">Inner and custom time</a></li>
+                        <li><a href="#">Timeline and multiple animations</a></li>
+                    </ul>
+                </div>
+                <hr class="space" />
+                <h4 id="settings" class="doc-subtitle">Settings</h4>
+                <table class="table table-full-border doc-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Initialization</td>
+                            <td>Attribute</td>
+                            <td>
+                                Add data attribute <code>data-anima="animation-name"</code>to target object. Default trigger is on scroll.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Initialization</td>
+                            <td>Javascript</td>
+                            <td>
+                                To animate an element use function <code>$("#target").showAnima("animation-name");</code>.<br />
+                                Use <code>$("#target").showAnima("animation-name","complete");</code> to start a full animation process like default animations,
+                                it support all the features like attribute data-anima and group animations.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Inner target</td>
+                            <td>CSS</td>
+                            <td>
+                                Add the class <code>anima</code> to inner item of a parent container containing the animaion to animate the item, the parent contain the animation settings
+                                and it's the trigger of the animation. To set different inner animations add the class <code>anima-animation-name</code> to inner element. <br />Ex: <code>&lt;div class="anima anima-fade-left">&lt;/div></code>.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Outer target</td>
+                            <td>CSS</td>
+                            <td>
+                                Add the attribute <code>data-target="#ID"</code> to the trigger item to animate the item with the setted ID. 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Options</td>
+                            <td>Attribute</td>
+                            <td>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td><code>data-anima="animation-name"</code></td>
+                                            <td>
+                                                Set the animation type. Animations list below.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>data-trigger="value"</code></td>
+                                            <td>
+                                                Set how the animation is activated. Values: <code>scroll</code>, <code>load</code>, <code>hover</code>, <code>click</code>.
+                                                Default scroll.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>data-time="123"</code></td>
+                                            <td>
+                                                Set the animation time in milliseconds.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>data-hidden="true"</code></td>
+                                            <td>
+                                                Hide the item associated with the animation and show it only on mouse hover.
+                                             </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>data-timeline="value"</code></td>
+                                            <td>
+                                                Animate sequentially multiple items.  Values: <code>asc</code>, <code>desc</code>.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>data-timeline-time="123"</code></td>
+                                            <td>
+                                                Set the interval in milliseconds between each item animation. Default 500 ms.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Animation types</td>
+                            <td>Attribute</td>
+                            <td>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Fade In</td>
+                                            <td><code>data-anima="fade-in"</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fade Left</td>
+                                            <td><code>data-anima="fade-left"</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fade Right</td>
+                                            <td><code>data-anima="fade-right"</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fade Top</td>
+                                            <td><code>data-anima="fade-top"</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fade Bottom</td>
+                                            <td><code>data-anima="fade-bottom"</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Show scale</td>
+                                            <td><code>data-anima="show-scale"</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Scale</td>
+                                            <td><code>data-anima="scale"</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Scale Rotate</td>
+                                            <td><code>data-anima="scale-rotate"</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pulse</td>
+                                            <td><code>data-anima="pulse"</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pulse Horizontal</td>
+                                            <td><code>data-anima="pulse-horizontal"</code></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Default animation</td>
+                            <td>Javascript</td>
+                            <td>
+                                You can set default animation by edit the file <code>../themekit/scripts/main.js</code>, edit the code <code>var default_anima = "fade-in";</code> and replace fade-in with animation name you want.
+                                After this step you can use the default animation with the keyword <code>default</code>. <br />Ex: <code>data-anima="default"</code>.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Add custom animation</td>
+                            <td>CSS</td>
+                            <td>
+                                You can add a custom animation by add it into a CSS file and then by call it like always. Ex. <code>data-anima="your-animation"</code>.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container"></div>
+        <div class="footer-bar">
+            <div class="container">
+                &copy; 2019. All rights reserved.
+                Designed and built with passion and hard work by the <a href="https://schiocco.com" target="_blank">schiocco.com</a> team.
+            </div>
+        </div>
+        <link async rel="stylesheet" href="../themekit/media/icons/iconsmind/line-icons.min.css">
+        <script src="../themekit/scripts/imagesloaded.min.js"></script>
+        <script src="../themekit/scripts/prettify.js"></script>
+        <script src="../themekit/scripts/slimscroll.min.js"></script>
+        <script src="../themekit/scripts/tab-accordion.js"></script>
+        
+        <script>
+            function showAnimaPreview(animation) {
+                $('#anima-preview').attr("style", "").attr("class", "").showAnima(animation);
+            }
+        </script>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,316 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Countdown | Components | Themekit</title>
+    <meta name="description" content="Various HTML components for build modern HTML websites.">
+    <script src="../themekit/scripts/jquery.min.js"></script>
+    <script src="../themekit/scripts/main.js"></script>
+    <link rel="stylesheet" href="../themekit/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../themekit/css/style.css">
+    <link rel="stylesheet" href="../themekit/css/prettify.css">
+    <link rel="stylesheet" href="../skin.css">
+    <link rel="icon" href="../images/favicon.png">
+</head>
+<body class="menu-side-cnt">
+    <div id="preloader"></div>
+    <nav class="menu-classic menu-fixed menu-wide doc-main-menu scroll-change" data-menu-anima="fade-in">
+        <div class="container">
+            <div class="menu-brand">
+                <a href="https://themekit.dev/">
+                    <img class="logo-default" src="../images/logo.svg" alt="logo" />
+                    <img class="logo-retina" src="../images/logo.svg" alt="logo" />
+                </a>
+            </div>
+        </div>
+    </nav>
+    <nav class="menu-side menu-side-collapse doc-menu scroll-change">
+        <i class="menu-btn"></i>
+        <div class="menu-cnt">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Getting started</a>
+                    <ul>
+                        <li><a href="#">Start here</a></li>
+                        <li><a href="../css.html">Global CSS</a></li>
+                        <li><a href="../js.html">Global JS</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Components</a>
+                    <ul>
+                        <li><a href="../components/animations.html">Animations</a></li>
+                        <li><a href="../components/buttons.html">Buttons and inputs</a></li>
+                        <li><a href="../components/contact-form.html">Contact form</a></li>
+                        <li><a href="../components/content-box.html">Content box</a></li>
+                        <li><a href="../components/countdown.html">Countdown</a></li>
+                        <li><a href="../components/counter.html">Counter</a></li>
+                        <li><a href="../components/icons.html">Icons</a></li>
+                        <li><a href="../components/image-box.html">Image box</a></li>
+                        <li><a href="../components/inner-menu.html">Inner menu</a></li>
+                        <li><a href="../components/lists.html">Lists</a></li>
+                        <li><a href="../components/map.html">Map</a></li>
+                        <li><a href="../components/media-box.html">Media box</a></li>
+                        <li><a href="../components/progress-bar.html">Progress bar</a></li>
+                        <li><a href="../components/social.html">Social</a></li>
+                        <li><a href="../components/table.html">Table</a></li>
+                        <li><a href="../components/timeline.html">Timeline</a></li>
+                        <li><a href="../components/typography.html">Typography</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Containers</a>
+                    <ul>
+                        <li><a href="../containers/accordion.html">Accordion</a></li>
+                        <li><a href="../containers/album.html">Album</a></li>
+                        <li><a href="../containers/collapse.html">Collapse</a></li>
+                        <li><a href="../containers/fixed-area.html">Fixed area</a></li>
+                        <li><a href="../containers/grid.html">Grid</a></li>
+                        <li><a href="../containers/lightbox.html">Lightbox</a></li>
+                        <li><a href="../containers/masonry.html">Masonry</a></li>
+                        <li><a href="../containers/scroll-box.html">Scroll box</a></li>
+                        <li><a href="../containers/slider.html">Slider</a></li>
+                        <li><a href="../containers/steps.html">Steps</a></li>
+                        <li><a href="../containers/tab.html">Tab</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Sections</a>
+                    <ul>
+                        <li><a href="../sections/base.html">Base</a></li>
+                        <li><a href="../sections/image.html">Image</a></li>
+                        <li><a href="../sections/slider.html">Slider</a></li>
+                        <li><a href="../sections/video.html">Video</a></li>
+                        <li><a href="../sections/block.html">Block</a></li>
+                        <li><a href="../sections/map.html">Map</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Headers</a>
+                    <ul>
+                        <li><a href="../headers/image.html">Image</a></li>
+                        <li><a href="../headers/slider.html">Image slider</a></li>
+                        <li><a href="../headers/video.html">Video</a></li>
+                        <li><a href="../headers/base.html">Base</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../navs.html">Navigation</a>
+                </li>
+                <li>
+                    <a href="../footer.html">Footer</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header id="header" class="header-base doc-title scroll-hide">
+        <div class="container">
+            <h1>Countdown</h1>
+            <div class="menu-inner">
+                <div><i class="menu-btn"></i><span>Menu</span></div>
+                <ul>
+                    <li class="active"><a href="#preview">Preview</a></li>
+                    <li><a href="#usage">Usage</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                    <li><a href="#related">Related</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-base">
+            <div class="container">
+                <h4 id="preview" class="doc-subtitle">Preview</h4>
+                <p class="doc-subtitle">Countdown vertical</p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="countdown countdown-vertical">
+                            <h3>Tickets</h3>
+                            <div data-time="02/21/2020 10:30:00" data-utc-offset="-5">
+                                <div><span class="days text-md">00</span><span>Days</span></div>
+                                <div><span class="hours text-md">00</span><span>Hours</span></div>
+                                <div><span class="minutes text-md">00</span><span>Minutes</span></div>
+                                <div><span class="seconds text-md">00</span><span>Seconds</span></div>
+                            </div>
+                            <p>Deadline</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="countdown countdown-vertical">
+                            <h3>Tickets</h3>
+                            <div data-time="02/21/2020 10:30:00" data-utc-offset="-5">
+                                <div><span class="days text-md">00</span><span>Days</span></div>
+                                <div><span class="hours text-md">00</span><span>Hours</span></div>
+                                <div><span class="minutes text-md">00</span><span>Minutes</span></div>
+                                <div><span class="seconds text-md">00</span><span>Seconds</span></div>
+                            </div>
+                            <p>Deadline</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="space-sm" />
+                <p class="doc-subtitle">Countdown horizontal</p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="countdown countdown-horizontal">
+                            <h3>Tickets</h3>
+                            <div data-time="02/21/2020 10:30:00" data-utc-offset="-5">
+                                <div><span class="days text-md">00</span><span>Days</span></div>
+                                <div><span class="hours text-md">00</span><span>Hours</span></div>
+                                <div><span class="minutes text-md">00</span><span>Minutes</span></div>
+                                <div><span class="seconds text-md">00</span><span>Seconds</span></div>
+                            </div>
+                            <p>Deadline</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="countdown countdown-horizontal">
+                            <h3>Tickets</h3>
+                            <div data-time="02/21/2020 10:30:00" data-utc-offset="-5">
+                                <div><span class="days text-md">00</span><span>:</span></div>
+                                <div><span class="hours text-md">00</span><span>:</span></div>
+                                <div><span class="minutes text-md">00</span><span>:</span></div>
+                                <div><span class="seconds text-md">00</span><span>days</span></div>
+                            </div>
+                            <p>Deadline</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="space" />
+                <h4 id="usage" class="doc-subtitle">Usage</h4>
+                <div class="doc-tab tab-box tab-inverse" data-tab-anima="fade-in">
+                    <div class="panel active">
+<pre class="prettyprint doc-code">
+&lt;div class="countdown countdown-vertical">
+    &lt;h3>Tickets&lt;/h3>
+    &lt;div data-time="02/21/2020 10:30:00" data-utc-offset="-5">
+        &lt;div>&lt;span class="days text-md">00&lt;/span>&lt;span>Days&lt;/span>&lt;/div>
+        &lt;div>&lt;span class="hours text-md">00&lt;/span>&lt;span>Hours&lt;/span>&lt;/div>
+        &lt;div>&lt;span class="minutes text-md">00&lt;/span>&lt;span>Minutes&lt;/span>&lt;/div>
+        &lt;div>&lt;span class="seconds text-md">00&lt;/span>&lt;span>Seconds&lt;/span>&lt;/div>
+    &lt;/div>
+    &lt;p>Deadline&lt;/p>
+&lt;/div>
+</pre>
+                    </div>
+                    <div class="panel">
+<pre class="prettyprint doc-code">
+&lt;div class="countdown countdown-horizontal">
+    &lt;h3>Tickets&lt;/h3>
+    &lt;div data-time="02/21/2020 10:30:00" data-utc-offset="-5">
+        &lt;div>&lt;span class="days text-md">00&lt;/span>&lt;span>Days&lt;/span>&lt;/div>
+        &lt;div>&lt;span class="hours text-md">00&lt;/span>&lt;span>Hours&lt;/span>&lt;/div>
+        &lt;div>&lt;span class="minutes text-md">00&lt;/span>&lt;span>Minutes&lt;/span>&lt;/div>
+        &lt;div>&lt;span class="seconds text-md">00&lt;/span>&lt;span>Seconds&lt;/span>&lt;/div>
+    &lt;/div>
+    &lt;p>Deadline&lt;/p>
+&lt;/div>
+</pre>
+                    </div>
+                    <ul class="nav tab-nav">
+                        <li class="active"><a href="#">Vertical</a></li>
+                        <li><a href="#">Horizontal</a></li>
+                    </ul>
+                </div>
+                <hr class="space-sm" />
+                <h4 class="doc-subtitle">Installation</h4>
+                <div class="panel panel-default">
+<pre class="prettyprint doc-code">
+&lt;script src='themekit/scripts/progress.js'>&lt;/script&gt; 
+</pre>
+                </div>
+                <hr class="space" />
+                <h4 id="settings" class="doc-subtitle">Settings</h4>
+                <table class="table table-full-border doc-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Initialization</td>
+                            <td>--</td>
+                            <td>
+                                Add the class <code>countdown</code> and the attribute <code>data-time="mm/dd/yyyy hh:mm:ss"</code> to target object,
+                                insert into the target container the items for days, hours, minutes, seconds by add to theme the classes
+                                <code>days</code>,<code>hours</code>,<code>minutes</code>,<code>seconds</code>.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Initialization</td>
+                            <td>Javascript</td>
+                            <td>
+                                Use the function <code>$('#target').downCount({ date: 'mm/dd/yyyy hh:mm:ss', offset: number });</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Settings</td>
+                            <td>Data attribute</td>
+                            <td>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td><code>date="mm/dd/yyyy hh:mm:ss"</code></td>
+                                            <td>
+                                                Date and time of countdown.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>offset="-1"</code></td>
+                                            <td>
+                                                UTC Timezone offset. You can get your UTC <a class="btn-text" href="http://www.timeanddate.com/time/map/" rel="nofollow" target="_blank">here</a>.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr class="space m">
+                <h4 id="related" class="doc-subtitle">Related contents</h4>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <a href="https://github.com/sonnyt/downCount" target="_blank" rel="nofollow" class="btn btn-xs">Documentation</a>
+                    </div>
+                    <div class="col-lg-2">
+
+                    </div>
+                    <div class="col-lg-2">
+
+                    </div>
+                    <div class="col-lg-2">
+
+                    </div>
+                    <div class="col-lg-2">
+
+                    </div>
+                    <div class="col-lg-2">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container"></div>
+        <div class="footer-bar">
+            <div class="container">
+                &copy; 2019. All rights reserved.
+                Designed and built with passion and hard work by the <a href="https://schiocco.com" target="_blank">schiocco.com</a> team.
+            </div>
+        </div>
+        <link async rel="stylesheet" href="../themekit/media/icons/iconsmind/line-icons.min.css">
+        <script src="../themekit/scripts/prettify.js"></script>
+        <script src="../themekit/scripts/progress.js"></script>
+        <script src="../themekit/scripts/slimscroll.min.js"></script>
+        <script src="../themekit/scripts/tab-accordion.js"></script>
+        
+    </footer>
+</body>
+</html>

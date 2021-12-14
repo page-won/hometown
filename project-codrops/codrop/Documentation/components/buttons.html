@@ -1,0 +1,373 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buttons | Components | Themekit</title>
+    <meta name="description" content="Some of most important Bootstrap components and HTML objects.">
+    <script src="../themekit/scripts/jquery.min.js"></script>
+    <script src="../themekit/scripts/main.js"></script>
+    <link rel="stylesheet" href="../themekit/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../themekit/css/style.css">
+    <link rel="stylesheet" href="../themekit/css/prettify.css">
+    <link rel="stylesheet" href="../skin.css">
+    <link rel="icon" href="../images/favicon.png">
+</head>
+<body class="menu-side-cnt">
+    <div id="preloader"></div>
+    <nav class="menu-classic menu-fixed menu-wide doc-main-menu scroll-change" data-menu-anima="fade-in">
+        <div class="container">
+            <div class="menu-brand">
+                <a href="https://themekit.dev/">
+                    <img class="logo-default" src="../images/logo.svg" alt="logo" />
+                    <img class="logo-retina" src="../images/logo.svg" alt="logo" />
+                </a>
+            </div>
+        </div>
+    </nav>
+    <nav class="menu-side menu-side-collapse doc-menu scroll-change">
+        <i class="menu-btn"></i>
+        <div class="menu-cnt">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Getting started</a>
+                    <ul>
+                        <li><a href="#">Start here</a></li>
+                        <li><a href="../css.html">Global CSS</a></li>
+                        <li><a href="../js.html">Global JS</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Components</a>
+                    <ul>
+                        <li><a href="../components/animations.html">Animations</a></li>
+                        <li><a href="../components/buttons.html">Buttons and inputs</a></li>
+                        <li><a href="../components/contact-form.html">Contact form</a></li>
+                        <li><a href="../components/content-box.html">Content box</a></li>
+                        <li><a href="../components/countdown.html">Countdown</a></li>
+                        <li><a href="../components/counter.html">Counter</a></li>
+                        <li><a href="../components/icons.html">Icons</a></li>
+                        <li><a href="../components/image-box.html">Image box</a></li>
+                        <li><a href="../components/inner-menu.html">Inner menu</a></li>
+                        <li><a href="../components/lists.html">Lists</a></li>
+                        <li><a href="../components/map.html">Map</a></li>
+                        <li><a href="../components/media-box.html">Media box</a></li>
+                        <li><a href="../components/progress-bar.html">Progress bar</a></li>
+                        <li><a href="../components/social.html">Social</a></li>
+                        <li><a href="../components/table.html">Table</a></li>
+                        <li><a href="../components/timeline.html">Timeline</a></li>
+                        <li><a href="../components/typography.html">Typography</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Containers</a>
+                    <ul>
+                        <li><a href="../containers/accordion.html">Accordion</a></li>
+                        <li><a href="../containers/album.html">Album</a></li>
+                        <li><a href="../containers/collapse.html">Collapse</a></li>
+                        <li><a href="../containers/fixed-area.html">Fixed area</a></li>
+                        <li><a href="../containers/grid.html">Grid</a></li>
+                        <li><a href="../containers/lightbox.html">Lightbox</a></li>
+                        <li><a href="../containers/masonry.html">Masonry</a></li>
+                        <li><a href="../containers/scroll-box.html">Scroll box</a></li>
+                        <li><a href="../containers/slider.html">Slider</a></li>
+                        <li><a href="../containers/steps.html">Steps</a></li>
+                        <li><a href="../containers/tab.html">Tab</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Sections</a>
+                    <ul>
+                        <li><a href="../sections/base.html">Base</a></li>
+                        <li><a href="../sections/image.html">Image</a></li>
+                        <li><a href="../sections/slider.html">Slider</a></li>
+                        <li><a href="../sections/video.html">Video</a></li>
+                        <li><a href="../sections/block.html">Block</a></li>
+                        <li><a href="../sections/map.html">Map</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Headers</a>
+                    <ul>
+                        <li><a href="../headers/image.html">Image</a></li>
+                        <li><a href="../headers/slider.html">Image slider</a></li>
+                        <li><a href="../headers/video.html">Video</a></li>
+                        <li><a href="../headers/base.html">Base</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../navs.html">Navigation</a>
+                </li>
+                <li>
+                    <a href="../footer.html">Footer</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header id="header" class="header-base doc-title scroll-hide">
+        <div class="container">
+            <h1>Buttons and inputs</h1>
+            <div class="menu-inner">
+                <div><i class="menu-btn"></i><span>Menu</span></div>
+                <ul>
+                    <li class="active"><a href="#preview">Preview</a></li>
+                    <li><a href="#usage">Usage</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-base">
+            <div class="container">
+                <h4 id="preview" class="doc-subtitle">Square buttons</h4>
+                <div class="text-left">
+                    <a href="#" class="btn btn-sm full-width-sm">Button</a><span class="space-xs"></span>
+                    <a href="#" class="btn btn-sm full-width-sm">Button</a><span class="space-xs"></span>
+                    <a href="#" class="btn btn-sm full-width-sm">Button</a><span class="space-xs"></span>
+                    <a href="#" class="btn btn-sm full-width-sm">Button</a>
+                </div>
+                <hr class="space-sm">
+                <h4 class="doc-subtitle">Circle buttons</h4>
+                <div class="text-left">
+                    <a href="#" class="btn btn-sm btn-circle full-width-sm">Button</a><span class="space-xs"></span>
+                    <a href="#" class="btn btn-sm btn-circle full-width-sm">Button</a><span class="space-xs"></span>
+                    <a href="#" class="btn btn-sm btn-circle full-width-sm">Button</a><span class="space-xs"></span>
+                    <a href="#" class="btn btn-sm btn-circle full-width-sm">Button</a>
+                </div>
+                <hr class="space-sm">
+                <h4 class="doc-subtitle">Text buttons</h4>
+                <div class="text-left">
+                    <a class="btn-text" href="#">Button</a><span class="space-sm"></span>
+                    <a class="btn-text" href="#">Button</a><span class="space-sm"></span>
+                    <a class="btn-text" href="#">Button</a><span class="space-sm"></span>
+                    <a class="btn-text" href="#">Button</a>
+                </div>
+                <hr class="space-sm">
+                <h4 class="doc-subtitle">Square border buttons</h4>
+                <div class="text-left">
+                    <a href="#" class="btn btn-sm btn-border full-width-sm">Button</a><span class="space-xs"></span>
+                    <a href="#" class="btn btn-sm btn-border full-width-sm">Button</a><span class="space-xs"></span>
+                    <a href="#" class="btn btn-sm btn-border full-width-sm">Button</a><span class="space-xs"></span>
+                    <a href="#" class="btn btn-sm btn-border full-width-sm">Button</a>
+                </div>
+                <hr class="space-sm">
+                <h4 class="doc-subtitle">Circle border buttons</h4>
+                <div class="text-left">
+                    <a href="#" class="btn btn-sm btn-circle btn-border full-width-sm">Button</a><span class="space-xs"></span>
+                    <a href="#" class="btn btn-sm btn-circle btn-border full-width-sm">Button</a><span class="space-xs"></span>
+                    <a href="#" class="btn btn-sm btn-circle btn-border full-width-sm">Button</a><span class="space-xs"></span>
+                    <a href="#" class="btn btn-sm btn-circle btn-border full-width-sm">Button</a>
+                </div>
+                <hr class="space-sm">
+                <h4 class="doc-subtitle">Square icon buttons</h4>
+                <div class="text-left">
+                    <a href="#" class="btn btn-sm btn-icon full-width-sm"><i class="im-paper-plane"></i>Button</a><span class="space-xs"></span>
+                    <a href="#" class="btn btn-sm btn-icon full-width-sm"><i class="im-paper-plane"></i>Button</a><span class="space-xs"></span>
+                    <a href="#" class="btn btn-sm btn-icon full-width-sm"><i class="im-paper-plane"></i>Button</a><span class="space-xs"></span>
+                    <a href="#" class="btn btn-sm btn-icon full-width-sm"><i class="im-paper-plane"></i>Button</a>
+                </div>
+                <hr class="space-sm">
+                <h4 class="doc-subtitle">Circle icon buttons</h4>
+                <div class="text-left">
+                    <a href="#" class="btn btn-sm btn-circle btn-icon full-width-sm"><i class="im-paper-plane"></i>Button</a><span class="space-xs"></span>
+                    <a href="#" class="btn btn-sm btn-circle btn-icon full-width-sm"><i class="im-paper-plane"></i>Button</a><span class="space-xs"></span>
+                    <a href="#" class="btn btn-sm btn-circle btn-icon full-width-sm"><i class="im-paper-plane"></i>Button</a><span class="space-xs"></span>
+                    <a href="#" class="btn btn-sm btn-circle btn-icon full-width-sm"><i class="im-paper-plane"></i>Button</a>
+                </div>
+                <hr class="space-sm">
+                <h4 class="doc-subtitle">Animated buttons</h4>
+                <div class="text-left">
+                    <a class="btn btn-sm btn-icon btn-anima full-width-sm"><i class="im-paper-plane"></i>Button</a><span class="space-xs"></span>
+                    <a class="btn btn-sm btn-icon btn-anima full-width-sm"><i class="im-paper-plane"></i>Button</a><span class="space-xs"></span>
+                    <a class="btn btn-sm btn-icon btn-anima full-width-sm"><i class="im-paper-plane"></i>Button</a><span class="space-xs"></span>
+                    <a class="btn btn-sm btn-icon btn-anima full-width-sm"><i class="im-paper-plane"></i>Button</a>
+                </div>
+                <hr class="space-sm">
+                <h4 class="doc-subtitle">Button sizes</h4>
+                <div class="text-left">
+                    <a class="btn btn-xs btn-icon btn-anima full-width-sm"><i class="im-paper-plane"></i>Button small</a><span class="space-xs"></span>
+                    <a class="btn btn-xs btn-icon btn-anima full-width-sm"><i class="im-paper-plane"></i>Button small</a><span class="space-xs"></span>
+                    <a class="btn btn-xs btn-icon btn-anima full-width-sm"><i class="im-paper-plane"></i>Button small</a><span class="space-xs"></span>
+                    <a class="btn btn-xs btn-icon btn-anima full-width-sm"><i class="im-paper-plane"></i>Button small</a>
+                    <br><br>
+                    <a class="btn btn-sm btn-icon btn-anima full-width-sm"><i class="im-paper-plane"></i>Button medium</a><span class="space-xs"></span>
+                    <a class="btn btn-sm btn-icon btn-anima full-width-sm"><i class="im-paper-plane"></i>Button medium</a><span class="space-xs"></span>
+                    <a class="btn btn-sm btn-icon btn-anima full-width-sm"><i class="im-paper-plane"></i>Button medium</a><span class="space-xs"></span>
+                    <a class="btn btn-sm btn-icon btn-anima full-width-sm"><i class="im-paper-plane"></i>Button medium</a>
+                    <br><br>
+                    <a class="btn btn-lg btn-icon btn-anima full-width-sm"><i class="im-paper-plane"></i>Button large</a><span class="space-xs"></span>
+                    <a class="btn btn-lg btn-icon btn-anima full-width-sm"><i class="im-paper-plane"></i>Button large</a><span class="space-xs"></span>
+                    <a class="btn btn-lg btn-icon btn-anima full-width-sm"><i class="im-paper-plane"></i>Button large</a><span class="space-xs"></span>
+                    <a class="btn btn-lg btn-icon btn-anima full-width-sm"><i class="im-paper-plane"></i>Button large</a>
+                </div>
+                <hr class="space-sm" />
+                <h4 class="doc-subtitle">Input text</h4>
+                <input class="input-text" type="text" placeholder="Lorem ipsum dolorem" />
+                <hr class="space-sm">
+                <h4 class="doc-subtitle">Input button</h4>
+                <div class="input-text-btn">
+                    <input class="input-text" type="text" placeholder="Lorem ipsum dolorem" /><input type="submit" value="Send" class="btn"></input>
+                </div>
+                <hr class="space-sm">
+                <h4 class="doc-subtitle">Input select</h4>
+                <select class="input-select">
+                    <option>Option</option>
+                    <option>Option</option>
+                    <option>Option</option>
+                </select>
+                <hr class="space-sm">
+                <h4 class="doc-subtitle">Input textarea</h4>
+                <textarea class="input-textarea" placeholder="Lorem ipsum dolorem"></textarea>
+                <hr class="space" />
+                <h4 id="usage" class="doc-subtitle">Usage</h4>
+                <div class="doc-tab tab-box tab-inverse" data-tab-anima="fade-in">
+                    <div class="panel active">
+                        <div class="doc-code">
+<pre class="prettyprint">
+&lt;a href="#" class="btn btn-sm">Button&lt;/a>
+</pre>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="doc-code">
+<pre class="prettyprint">
+&lt;a class="btn btn-sm btn-icon btn-anima">&lt;i class="im-paper-plane">&lt;/i>Button&lt;/a>
+</pre>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="doc-code">
+<pre class="prettyprint">
+&lt;input class="input-text" type="text" placeholder="Lorem ipsum dolorem" />
+
+&lt;div class="input-text-btn">
+    &lt;input class="input-text" type="text" placeholder="Lorem ipsum dolorem" />&lt;input type="submit" value="Send" class="btn">&lt;/input>
+&lt;/div>
+
+&lt;select class="input-select">
+    &lt;option>Option&lt;/option>
+    &lt;option>Option&lt;/option>
+    &lt;option>Option&lt;/option>
+&lt;/select>
+
+&lt;textarea class="input-textarea" placeholder="Lorem ipsum dolorem">&lt;/textarea>
+</pre>
+                        </div>
+                    </div>
+                    <ul class="nav tab-nav">
+                        <li class="active"><a href="#">Button</a></li>
+                        <li><a href="#">Circle icon animated button</a></li>
+                        <li><a href="#">Inputs</a></li>
+                    </ul>
+                </div>
+                <hr class="space" />
+                <h4 id="settings" class="doc-subtitle">Settings</h4>
+                <table class="table table-full-border doc-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Button styles</td>
+                            <td>CSS</td>
+                            <td>
+                                <table class="table doc-table-90">
+                                    <tbody>
+                                        <tr>
+                                            <td>Square</td>
+                                            <td>
+                                                Default style.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Circle</td>
+                                            <td>
+                                                Add the class <code>btn-circle</code> to the component.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Text</td>
+                                            <td>
+                                                Add the class <code>btn-text</code> to the component. This type don't accept border and circle styles.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Border</td>
+                                            <td>
+                                                Add the class <code>btn-border</code> to the component.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Icon</td>
+                            <td>HTML - CSS</td>
+                            <td>
+                                Insert the icon code <code>&lt;i class="icon-name">&lt;i/></code> inside the component and add the class <code>btn-icon</code> to the component.
+                                To get the icons list go to the <a class="btn-text" href="icons.html">icons</a> page.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Animation</td>
+                            <td>CSS</td>
+                            <td>
+                                Add the class <code>btn-anima</code> to the component. This feature work only with icon buttons.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Button size</td>
+                            <td>CSS</td>
+                            <td>
+                                <table class="table doc-table-90">
+                                    <tbody>
+                                        <tr>
+                                            <td>Small</td>
+                                            <td>
+                                                Add the class <code>btn-xs</code> to the component.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Medium</td>
+                                            <td>
+                                                Add the class <code>btn-sm</code> to the component.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Large</td>
+                                            <td>
+                                                Add the class <code>btn-lg</code> to the component.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container"></div>
+        <div class="footer-bar">
+            <div class="container">
+                &copy; 2019. All rights reserved.
+                Designed and built with passion and hard work by the <a href="https://schiocco.com" target="_blank">schiocco.com</a> team.
+            </div>
+        </div>
+        <link async rel="stylesheet" href="../themekit/media/icons/iconsmind/line-icons.min.css">
+        <script src="../themekit/scripts/slimscroll.min.js"></script>
+        <script src="../themekit/scripts/tab-accordion.js"></script>
+        <script src="../themekit/scripts/prettify.js"></script>
+        
+    </footer>
+</body>
+</html>
